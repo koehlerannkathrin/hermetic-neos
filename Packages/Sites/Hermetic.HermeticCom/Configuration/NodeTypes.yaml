@@ -1,0 +1,20 @@
+'Instanode.Headstart:GridContent':
+  properties:
+    extraClassesPre:
+      ui:
+        inspector:
+          editorOptions:
+            multiple: true
+            values:
+              divider:
+                label: 'Divider'
+
+'Instanode.Headstart:GridContent.Column':
+  properties:
+    extraClassesPre:
+      ui:
+        inspector:
+          editorOptions:
+            values:
+              inner-well:
+                label: 'Well'

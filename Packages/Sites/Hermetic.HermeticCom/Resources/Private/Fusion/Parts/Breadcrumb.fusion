@@ -1,0 +1,19 @@
+prototype(Hermetic.HermeticCom:Parts.Breadcrumb) < prototype(Neos.Fusion:Tag) {
+  @context.items = ${q(node).add(q(node).parents('[instanceof Neos.Neos:Document]'))}
+
+  attributes {
+    class = Neos.Fusion:RawArray {
+      breadcrumb = 'breadcrumb'
+      container = 'container'
+    }
+  }
+
+  content = BreadcrumbMenu {
+    attributes {
+      class = Neos.Fusion:RawArray {
+        breadcrumbList = 'breadcrumb-list'
+      }
+    }
+    itemCollection = ${items.get()}
+  }
+}

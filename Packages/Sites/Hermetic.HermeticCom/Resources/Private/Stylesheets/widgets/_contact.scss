@@ -1,0 +1,38 @@
+.contact-column {
+  @include make-sm-column(12);
+}
+
+.contact-firstname,
+.contact-lastname {
+  @include make-sm-column(6);
+}
+
+@media (min-width: $screen-sm) {
+  .contact-firstname {
+    padding-right: 0;
+  }
+}
+
+.contact-submit {
+  @include make-md-column(6);
+}
+
+.contact-confirmation,
+.contact-error {
+  display: none;
+  border: 0;
+  border-radius: 0;
+
+  &.alert-success {
+    background-color: $brand-primary;
+    color: $color-white;
+  }
+
+  b {
+    font-weight: bold;
+  }
+
+  .debug {
+    font-size: $font-size-small;
+  }
+}

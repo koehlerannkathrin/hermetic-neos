@@ -1,0 +1,74 @@
+/*
+  Grid content
+
+  | Columns  | Category  |  Class      |
+  --------------------------------------
+  1  column    Small-       .col-1
+  2  columns   Small        .col-2
+  3  columns   Small+       .col-3
+  - - - - - - - - - - - - - - - - - - -
+  4  columns   Normal-      .col-4
+  5  columns   Normal       .col-5
+  6  columns   Normal+      .col-6
+  - - - - - - - - - - - - - - - - - - -
+  7  columns   Medium-      .col-7
+  8  columns   Medium       .col-8
+  9  columns   Medium+      .col-9
+  - - - - - - - - - - - - - - - - - - -
+  10 columns   Large-       .col-10
+  11 columns   Large        .col-11
+  12 columns   Large+       .col-12
+  --------------------------------------
+*/
+
+.grid-content-col {
+  @for $i from 1 to $grid-columns+1 {
+    &.col-#{$i} {
+      @include make-md-column($i);
+    }
+  }
+
+  @for $i from 1 to $grid-columns+1 {
+    &.col-offset-#{$i} {
+      @include make-md-column-offset($i);
+    }
+  }
+
+  // Grid content columns on small devices (e.g. tablet)
+  //
+  // Instead of taking up full width unconditionally, by default:
+  //
+  // - Small and normal columns expand to 50% width
+  // - Medium columns shrink to 50% width
+  // - Large columns expand to 100% width
+  //
+  @media (max-width: $screen-sm-max) {
+    &.col-1, &.col-2, &.col-3, &.col-4, &.col-5, &.col-6, &.col-7, &.col-8, &.col-9 {
+      @include make-sm-column(6);
+    }
+
+    &.col-10, &.col-11, &.col-12 {
+      @include make-sm-column(12);
+    }
+  }
+}
+
+// From bootstrap/_grid.scss
+.container {
+  @include container-fixed;
+
+  @media (min-width: $screen-sm-min) {
+    width: $container-sm;
+  }
+  @media (min-width: $screen-md-min) {
+    width: $container-md;
+  }
+  @media (min-width: $screen-lg-min) {
+    width: $container-lg;
+  }
+}
+
+// From bootstrap/_grid.scss
+.row {
+  @include make-row;
+}

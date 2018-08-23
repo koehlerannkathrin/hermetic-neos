@@ -1,0 +1,24 @@
+prototype(Hermetic.HermeticCom:Parts.Header) < prototype(Neos.Neos:Content) {
+  templatePath = 'resource://Hermetic.HermeticCom/Private/Templates/Parts/Header.html'
+
+  parts {
+    languages = Hermetic.HermeticCom:Parts.LanguageMenu
+  }
+
+  nav = Instanode.Headstart:Nav {
+    itemCollection = ${q(site).children('[instanceof Neos.Neos:Document]').get()}
+    prefix = 'header-nav'
+    collapse = ${true}
+  }
+
+  metaNav = Instanode.Headstart:Nav {
+    itemCollection >
+    entryLevel = 2
+    maximumLevels = 1
+    startingPoint = ${q(site).children('[uriPathSegment="meta"]').get(0)}
+    prefix = 'meta-nav'
+    collapse = ${false}
+  }
+
+  home = ${site}
+}

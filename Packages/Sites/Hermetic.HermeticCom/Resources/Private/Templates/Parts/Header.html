@@ -1,0 +1,14 @@
+{namespace neos=Neos\Neos\ViewHelpers}
+
+<div class="header">
+  <div class="row">
+    <div class="header-logo">
+      <neos:link.node node="{home}">
+        <img src="{f:uri.resource(path: 'Images/layout/hermetic-logo.svg', package: 'Hermetic.HermeticCom')}" alt="">
+      </neos:link.node>
+    </div>
+    {parts.languages -> f:format.raw()}
+    {metaNav -> f:format.raw()}
+    {nav -> f:format.raw()}
+  </div>
+</div>

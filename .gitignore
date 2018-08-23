@@ -1,0 +1,16 @@
+/Build/
+/Configuration/*
+!/Configuration/Settings.yaml
+/Data/
+/Packages/*
+!/Packages/Sites
+/Packages/Sites/*/Resources/node_modules/*
+/Packages/Sites/*/Resources/Public/Stylesheets/*
+/Packages/Sites/*/Resources/Public/Scripts/*
+/Web/*
+!/Web/mail.php
+!/Web/.htaccess
+/bin/*
+!/bin/webpack
+/flow
+.DS_Store

@@ -1,0 +1,52 @@
+//
+// Bootstrap
+//
+// http://getbootstrap.com/customize/#less-variables
+// https://github.com/twbs/bootstrap-sass/blob/v3.3.1/assets/stylesheets/bootstrap/_variables.scss
+//
+
+// Grid
+$grid-gutter-width: 30px;
+$container-large-desktop: (1140px + $grid-gutter-width);
+$grid-float-breakpoint: 992px;
+
+// Fonts
+$font-family-sans-serif: "open-sans", sans-serif;
+$font-family-serif: "museo-slab", serif;
+$font-size-base: 18px;
+$font-size-small: 16px;
+$font-size-h1: 25px;
+$font-size-h2: 20px;
+$font-size-h3: 20px;
+$font-size-h4: $font-size-base;
+$font-size-h5: $font-size-base;
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-bold: 700;
+$line-height-base: 1.55555556;
+$headings-font-family: $font-family-serif;
+$headings-line-height: 1.40740741;
+$headings-font-weight: $font-weight-normal;
+
+// Colors
+$color-white: #ffffff;
+$color-black: #000000;
+$color-blue: #007ac2;
+$color-green: #058036;
+$color-light-blue: #009ddf;
+$color-gray: #3c3c3b;
+$brand-primary: $color-blue;
+$brand-secondary: $color-gray;
+$headings-color: $color-blue;
+$text-color: $color-gray;
+$link-color: $brand-primary;
+$link-hover-color: darken($link-color, 15%);
+$link-hover-decoration: none;
+$callout-caption-bgcolor: transparentize($color-white, 0.7);
+
+// Components
+$border-radius-base: 0;
+$well-border: transparent;
+$well-bg: $brand-secondary;
+$well-color: $color-white;
+$input-border-focus: $brand-primary;

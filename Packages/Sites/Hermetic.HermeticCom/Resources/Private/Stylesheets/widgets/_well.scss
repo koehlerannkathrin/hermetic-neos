@@ -1,0 +1,26 @@
+.well {
+  position: relative;
+  box-shadow: none;
+  background-color: #EEE; //Überschreiben der vorhandenen Farbe
+
+  .more {
+
+    > a {
+      @media (min-width: $screen-md) {
+        line-height: $line-height-computed * 2;
+      }
+
+      &:after {
+        content: "\e080"; /* glyphicon-chevron-right */
+        font-family: "Glyphicons Halflings";
+        font-size: $font-size-small;
+        line-height: $font-size-small + 3px;
+        padding-left: 5px;
+
+        @media (max-width: $screen-sm-max) {
+          right: 20px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,81 @@
+.footer {
+  padding: 20px 0;
+  background-color: #54555D; //vorher -> $brand-primary
+  color: $color-white;
+
+  @media (min-width: $screen-md) {
+    padding: 30px 0 40px;
+  }
+}
+
+.footer-content {
+  @extend .container;
+}
+
+.footer-about {
+  @include make-sm-column(5);
+  font-size: $font-size-small;
+
+  p {
+    & b {
+      color: #ccc;
+    }
+  }
+}
+
+.footer-nav {
+  @include make-sm-column(2);
+  border-left: 1px solid #ccc; //vorher -> #92bee5
+
+  a {
+    color: $color-white;
+
+    &:hover {
+      color: darken($text-color, 15%);
+    }
+  }
+}
+
+.footer-nav-list,
+.footer-meta-nav-list {
+  padding: 10px 15px;
+  margin: 0;
+  list-style-type: none;
+
+  li {
+    padding: 5px 0;
+  }
+
+  @media (max-width: $screen-sm-max) {
+    margin-top: 10px;
+
+    li {
+      padding: 0;
+      display: block;
+    }
+  }
+}
+
+.footer-meta-nav {
+  @extend .footer-nav;
+}
+
+.footer-banner {
+  @include make-xs-column(12);
+  @include make-md-column(2);
+  border-left: 1px solid #ccc; //vorher -> #92bee5
+
+  > img {
+    width: 75px;
+    margin: 15px 15px 10px 15px;
+    vertical-align: top;
+    background-color: $color-white;
+    padding: 10px;
+
+    @media (min-width: $screen-md) {}
+
+    @media (min-width: $screen-lg) {
+      width: 100%;
+    }
+  }
+}

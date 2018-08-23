@@ -1,0 +1,28 @@
+.carousel {
+  margin: $line-height-computed auto;
+
+  .carousel-control {
+    background-image: none;
+  }
+
+  .carousel-control-icon {
+    background-repeat: no-repeat;
+    background-size: 45px;
+    transition: opacity .1s;
+    opacity: .5;
+
+    &:hover {
+      opacity: 1;
+    }
+
+    &.left {
+      background-image: url("../Images/layout/carousel-arrow-left.svg");
+      background-position: 20% 48%;
+    }
+
+    &.right {
+      background-image: url("../Images/layout/carousel-arrow-right.svg");
+      background-position: 70% 48%;
+    }
+  }
+}

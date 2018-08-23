@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+{namespace neos=Neos\Neos\ViewHelpers}
+{namespace ts=Neos\Fusion\ViewHelpers}
+
+<html>
+<head>
+  <f:section name="meta">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="icon" href="{f:uri.resource(path: 'Images/layout/favicon.png', package: 'Hermetic.HermeticCom')}">
+  </f:section>
+  <f:section name="stylesheets">
+    <link rel="stylesheet" href="{f:uri.resource(path: 'Stylesheets/styles.css', package: 'Hermetic.HermeticCom')}" media="all">
+    <style>
+      @font-face {
+        font-family: 'Glyphicons Halflings';
+        src: url("{f:uri.resource(path: 'Fonts/glyphicons-halflings-regular.eot', package: 'Hermetic.HermeticCom')}/fonts/glyphicons-halflings-regular.eot");
+        src: url("{f:uri.resource(path: 'Fonts/glyphicons-halflings-regular.eot', package: 'Hermetic.HermeticCom')}?#iefix") format("embedded-opentype"),
+             url("{f:uri.resource(path: 'Fonts/glyphicons-halflings-regular.woff', package: 'Hermetic.HermeticCom')}") format("woff"),
+             url("{f:uri.resource(path: 'Fonts/glyphicons-halflings-regular.ttf', package: 'Hermetic.HermeticCom')}") format("truetype"),
+             url("{f:uri.resource(path: 'Fonts/glyphicons-halflings-regular.svg', package: 'Hermetic.HermeticCom')}#glyphicons_halflingsregular") format("svg");
+      }
+    </style>
+  </f:section>
+  <f:section name="headScripts">
+    <f:if condition="{neos:rendering.inBackend()}">
+      <script>
+        var app = (app || {});
+        app.config = (app.config || {});
+        app.config.isBackend = true;
+      </script>
+    </f:if>
+  </f:section>
+</head>
+<body>
+<f:section name="body">
+  {parts.header -> f:format.raw()}
+  {parts.callout -> f:format.raw()}
+  <div class="content">
+    {content.main -> f:format.raw()}
+  </div>
+  {parts.footer -> f:format.raw()}
+</f:section>
+<f:section name="bodyScripts">
+  <script src="{f:uri.resource(path: 'Scripts/vendor.js', package: 'Hermetic.HermeticCom')}"></script>
+  <script src="{f:uri.resource(path: 'Scripts/application.js', package: 'Hermetic.HermeticCom')}"></script>
+</f:section>
+</body>
+</html>

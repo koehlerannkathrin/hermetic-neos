@@ -1,0 +1,25 @@
+include: Pages/**/*
+include: Parts/**/*
+
+root {
+  # Render Hermetic.HermeticCom:Page instead of Neos.NodeTypes:Page
+  defaultDocumentType {
+    @position = 'before documentType'
+    condition = ${q(documentNode).property('_nodeType.name') == 'Neos.NodeTypes:Page'}
+    type = 'Hermetic.HermeticCom:Page'
+  }
+
+  # „If you provide a Fusion prototype with the same name as your Document NodeType, it will
+  # automatically be used for rendering those Document Nodes.“
+  # See http://neos.readthedocs.io/en/stable/Appendixes/ReleaseNotes/400.html#documenttype-rendering-entry-point-for-fusion
+}
+
+# Fall back when non-default document node type cannot be rendered
+page = Hermetic.HermeticCom:Page
+
+# Anonymize IPs
+prototype(Neos.GoogleAnalytics:TrackingCode) {
+  code {
+    anonymizeIp = ${"ga('set', 'anonymizeIp', true);"}
+  }
+}

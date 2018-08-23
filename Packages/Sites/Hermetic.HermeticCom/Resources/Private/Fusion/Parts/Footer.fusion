@@ -1,0 +1,33 @@
+prototype(Hermetic.HermeticCom:Parts.Footer) < prototype(Neos.Neos:Content) {
+  templatePath = 'resource://Hermetic.HermeticCom/Private/Templates/Parts/Footer.html'
+  attributes.class = 'footer'
+
+  nav = Instanode.Headstart:Nav {
+    prefix = 'footer-nav'
+    collapse = ${false}
+    maximumLevels = 1
+    renderHiddenInIndex = ${false}
+  }
+
+  metaNav = Instanode.Headstart:Nav {
+    itemCollection >
+    entryLevel = 2
+    maximumLevels = 1
+    startingPoint = ${q(site).children('[uriPathSegment="footer-meta"]').get(0)}
+    prefix = 'footer-meta-nav'
+    collapse = ${false}
+  }
+}
+
+prototype(Hermetic.HermeticCom:Parts.Footer.Link) < prototype(Neos.Fusion:Tag) {
+  tagName = 'li'
+  @context.node = ${this.node}
+
+  content = Neos.Fusion:Tag {
+    tagName = 'a'
+    attributes.href = Neos.Neos:NodeUri {
+      node = ${node}
+    }
+    content = ${q(node).property('title')}
+  }
+}

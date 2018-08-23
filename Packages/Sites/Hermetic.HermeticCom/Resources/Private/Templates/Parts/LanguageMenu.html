@@ -1,0 +1,32 @@
+{namespace neos=Neos\Neos\ViewHelpers}
+{namespace ts=Neos\Fusion\ViewHelpers}
+
+<div class="languages">
+  <ul{attributes -> f:format.raw()}>
+      <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              <f:for each="{items}" as="item">
+                  <f:if condition="{item.state} == 'current'">
+                      {item.label}
+                  </f:if>
+              </f:for>
+          </a>
+          <ul class="dropdown-menu">
+              <f:for each="{items}" as="item">
+                  <li
+                  {ts:render(path:'{item.state}.attributes', context: {item: item}) -> f:format.raw()}>
+                  <f:if condition="{item.node}">
+                      <f:then>
+                          <neos:link.node node="{item.node}">{item.label}</neos:link.node>
+                      </f:then>
+                      <f:else>
+                          {item.label}
+                      </f:else>
+                  </f:if>
+                  </li>
+              </f:for>
+          </ul>
+
+      </li>
+  </ul>
+</div>

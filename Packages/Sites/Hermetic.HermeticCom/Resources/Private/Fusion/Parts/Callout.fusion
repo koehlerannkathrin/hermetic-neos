@@ -1,0 +1,32 @@
+prototype(Hermetic.HermeticCom:Parts.Callout) < prototype(Instanode.Headstart:Carousel) {
+  id = 'callout-carousel'
+  node = ${q(node).closest('[instanceof Instanode.Headstart:Callout.Document]').get(0)}
+  @context.node = ${this.node}
+
+  attributes {
+    class {
+      callout = 'callout'
+    }
+    data-keyboard = 'false'
+  }
+
+  prototype(Instanode.Headstart:Carousel.Control) {
+    attributes.class.icon = 'carousel-control-icon'
+    content >
+  }
+
+  controlLeft {
+    attributes.class.left ='left'
+  }
+
+  controlRight {
+    attributes.class.right ='right'
+  }
+}
+
+prototype(Instanode.Headstart:Callout.Image) < prototype(Neos.NodeTypes:Image) {
+  templatePath = 'resource://Instanode.Headstart/Private/Templates/NodeTypes/Callout/Image.html'
+  imageUri = Neos.Neos:ImageUri {
+    image = ${image}
+  }
+}

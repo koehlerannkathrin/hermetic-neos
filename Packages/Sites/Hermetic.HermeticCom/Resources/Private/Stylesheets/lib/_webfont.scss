@@ -1,0 +1,17 @@
+@media (min-width: $screen-sm) {
+  html:not(.wf-active):not(.wf-inactive):not(.wf-cached) {
+    body > * {
+      visibility: hidden;
+    }
+
+    .header,
+    .callout {
+      visibility: visible;
+    }
+
+    .header-nav-content,
+    .callout-caption-box > * {
+      visibility: hidden;
+    }
+  }
+}

@@ -1,0 +1,4 @@
+prototype(Hermetic.HermeticCom:Parts.Typekit) < prototype(Neos.Fusion:Template) {
+  templatePath = 'resource://Hermetic.HermeticCom/Private/Templates/Parts/Typekit.html'
+  id = 'ezs4nnh'
+}

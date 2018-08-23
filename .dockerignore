@@ -1,0 +1,9 @@
+bin/**
+Configuration/**
+Data/**
+Packages/**
+!Packages/Sites/**
+Packages/Sites/**/Resources/node_modules
+Packages/Sites/**/Resources/Public/Stylesheets
+Packages/Sites/**/Resources/Public/Scripts
+Web/_Resources/**

@@ -1,0 +1,21 @@
+.neos-nodetypes-text {
+  &.color-primary {
+    color: $color-gray; //$brand-primary;
+  }
+}
+
+@media (min-width: $screen-md) {
+  .neos-alignment-right {
+    float: right;
+    width: 41.66667%;
+  	margin-left: 30px;
+  	margin-bottom: 15px;
+  }
+
+  .neos-alignment-left {
+  	float: left;
+    width: 41.66667%;
+  	margin-right: 30px;
+  	margin-bottom: 15px;
+  }
+}

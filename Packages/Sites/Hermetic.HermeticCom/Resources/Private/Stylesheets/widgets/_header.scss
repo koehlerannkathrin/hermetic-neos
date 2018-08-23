@@ -1,0 +1,160 @@
+$header-logo-height-md: 82px;
+$header-logo-height-xs: $header-logo-height-md/2;
+
+.header {
+  @extend .container;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  @media (min-width: $screen-lg) {
+    padding-top: 50px;
+    padding-bottom: 30px;
+  }
+}
+
+.header-logo {
+  @include make-md-column(3);
+
+  @media (max-width: $screen-sm-max) {
+    // Align logo and toggle
+    position: absolute !important;
+  }
+
+  img {
+    height: $header-logo-height-xs;
+    margin-top: 12px;
+
+    @media (min-width: $screen-md) {
+      height: $header-logo-height-md;
+    }
+  }
+}
+
+.header-nav {
+  @include make-md-column(9);
+
+  @media (min-width: $screen-md) {
+    top: 32px;
+  }
+
+  a {
+    color: $color-black;
+
+    &:hover {
+      color: $color-green; //vorher $color-blue
+    }
+  }
+
+  li {
+    &.active > a,
+    &.current > a {
+      font-weight: $font-weight-normal;
+      color: $color-green; //vorher $color-blue
+    }
+  }
+}
+
+.meta-nav {
+  @include make-md-column(7);
+
+  @media (min-width: $screen-md) {
+    float: right;
+  }
+}
+
+.header-nav-list,
+.header-nav-sub,
+.meta-nav-list {
+  list-style-type: none;
+}
+
+.header-nav-list {
+  padding: 0;
+  margin-bottom: 0;
+
+  // Add extra padding to prevent list from overlaying logo
+  @media (max-width: $screen-sm-max) {
+    padding-top: $header-logo-height-xs+20px;
+  }
+
+  @media (min-width: $screen-md) {
+    text-align: right;
+    font-weight: $font-weight-normal;
+
+    li {
+      display: inline-block;
+    }
+
+    li + li:before {
+      display: inline-block;
+      content: '';
+      padding: 0 15px 0 0;
+    }
+  }
+
+  @media (min-width: $screen-lg) {
+    li + li:before {
+      padding: 0 25px 0 0;
+    }
+  }
+}
+
+.header-nav-sub {
+  @media (min-width: $screen-md) {
+    text-align: right;
+  }
+
+  @media (max-width: $screen-sm-max) {
+    padding-left: 10px;
+  }
+
+}
+
+.meta-nav-list {
+  @extend .header-nav-list;
+  font-size: 14px;
+  font-weight: $font-weight-light;
+}
+
+@media (min-width: $screen-md) {
+  .header-nav-sub {
+    display: none;
+    position: absolute;
+    right: 0;
+    padding: 0 $grid-gutter-width/2;
+    margin: 10px 0;
+    font-size: $font-size-small;
+
+    li {
+      padding-right: 5px;
+    }
+  }
+
+  .header-nav-sub {
+  }
+
+/*  .active .header-nav-sub {
+    display: block;
+  }*/
+}
+
+.header-nav-toggle {
+  color: #000;
+
+  button {
+    border-color: #000;
+  }
+
+  span {
+    background-color: #000;
+  }
+}
+
+@media (min-width: $grid-float-breakpoint) {
+  .header-nav-content.collapse {
+    display: block;
+    visibility: visible;
+    height: auto;
+    overflow: visible;
+  }
+}

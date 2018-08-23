@@ -1,0 +1,58 @@
+prototype(Hermetic.HermeticCom:Page) < prototype(Neos.NodeTypes:Page) {
+  @context.templatePath = 'resource://Hermetic.HermeticCom/Private/Templates/Page/Default.html'
+
+  head {
+    titleTag {
+      default {
+        collection = ${q(documentNode).add(q(documentNode).parents('[instanceof Neos.Neos:Document]')).slice(0, -1).get()}
+        itemRenderer = ${q(node).property('title') + (nodeIterator.isLast ? '' : ' – ')}
+        @process.siteName = ${(value ? String.stripTags(value) + ' – ' : '') + site.context.currentSite.name}
+      }
+    }
+
+    meta = Neos.Fusion:Template {
+      templatePath = ${templatePath}
+      sectionName = 'meta'
+    }
+
+    stylesheets.site = Neos.Fusion:Template {
+      templatePath = ${templatePath}
+      sectionName = 'stylesheets'
+    }
+
+    javascripts.site = Neos.Fusion:Template {
+      templatePath = ${templatePath}
+      sectionName = 'headScripts'
+    }
+
+    javascripts.typekit = Hermetic.HermeticCom:Parts.Typekit
+  }
+
+  body {
+    templatePath = ${templatePath}
+    sectionName = 'body'
+
+    parts {
+      header = Hermetic.HermeticCom:Parts.Header
+      callout = Hermetic.HermeticCom:Parts.Callout
+      footer = Hermetic.HermeticCom:Parts.Footer
+    }
+
+    content {
+      main = Neos.Neos:PrimaryContent {
+        nodePath = 'main'
+      }
+    }
+
+    javascripts.site = Neos.Fusion:Template {
+      templatePath = ${templatePath}
+      sectionName = 'bodyScripts'
+    }
+
+    # javascripts.analytics = Ttree.GoogleAnalytics:TrackingCode {
+    #  trackingCode = 'UA–'
+    # }
+  }
+
+  lastVisitedNodeScript >
+}

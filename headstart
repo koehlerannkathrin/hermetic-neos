@@ -1,0 +1,606 @@
+#!/usr/bin/env bash
+# Copyright (C) Tristan Koch <tristan@tknetwork.de>, All Rights Reserved.
+
+# Urheberrechtshinweis
+#
+# Dieses Programm (Script) und alle damit in unmittelbaren Zusammenhang stehenden
+# Dateien sind urheberrechtlich geschützt (Copyright). Das Urheberrecht liegt,
+# soweit nicht anders gekennzeichnet, bei Tristan Koch. Die Verwendung dieses
+# Scripts ist nur auf ausdrücklicke Genehmigung gestattet, die Genehmigung gilt
+# dabei ausschließlich für ein einzelnes zu benennendes Projekt.
+#
+# Wer gegen das Urheberrecht verstößt macht sich gem. § 106 ff Urhebergesetz
+# strafbar. Er wird zudem kostenpflichtig abgemahnt und muss Schadensersatz
+# leisten. Kopien von Inhalten können im Internet ohne großen Aufwand verfolgt
+# werden.
+#
+# 06.01.2016
+
+set -e
+
+PROJECT_ROOT=$(pwd)
+FLOW="./flow"
+CONFIG=".headstart"
+FORCE="FALSE"
+PLAYBOOK="site.yml"
+MYSQL="mysql"
+ARGS=""
+
+NODE_DEVELOPMENT=("instn-node")
+NODE_STAGING=("rio.instano.de")
+NODE_PRODUCTION=("plutus.ahorn.io")
+
+REPO=${REPO:-"TRUE"}
+VERBOSE=${VERBOSE:-"FALSE"}
+ENV=${ENV:-"staging"}
+
+if [ -n "$MYSQL_PASSWORD" ]; then
+  MYSQL="$MYSQL -p$MYSQL_PASSWORD"
+fi
+
+function usage() {
+  echo "$USAGE"
+  echo
+  exit -1
+}
+
+USAGE=$(cat <<-EOF
+	Usage: $0 <target> <command> [<options>]
+
+	TARGETS:
+
+	  local        Local (default)
+	  remote       Remote
+
+	COMMANDS:
+
+	  Local commands
+
+	  configure     Configure database and initialize site
+	  setup         Install dependencies, setup database, and import site
+	  run           Run server and watch assets
+	  import        Import site
+	  export        Export site
+
+	  Remote commands
+
+	  provision     Provision project
+	                  --env       Target host          (Default: staging)
+	                  --import    Replace site content (Default: no)
+	  deploy        Deploy project
+	                  --env       Target host          (Default: staging)
+	                  --import    Replace site content (Default: no)
+	  disable       Disable project
+	  export        Export remote site
+
+	OPTIONS:
+
+	  --force       Overwrite existing files and database
+	  --verbose     More verbose output
+
+	ENVIRONMENT:
+
+	  Required
+
+	  INSTN_INVENTORY
+	  INSTN_NEOS_ANSIBLE
+
+	  Optional
+
+	  VERBOSE, ENV,
+	  DB_NAME, DB_USER, DB_PASSWORD
+EOF
+)
+
+#
+# Utilities
+#
+
+function try() {
+  local cmd out
+  local red="\033[0;31m"
+  local nc="\033[0m"
+  cmd=$@
+
+  if [ $VERBOSE == "TRUE" ]; then
+    echo "\$ ${cmd}"
+    eval $cmd
+  else
+    if ! out=$(eval $cmd 2>&1); then
+      echo -e "${red}\$ $cmd${nc}"
+      echo -e "$out"
+      exit $?
+    fi
+  fi
+}
+
+#
+# Read arguments
+#
+
+# Choose target
+case "$1" in
+  -h|--help)
+    usage
+    ;;
+  local)
+    TARGET="local"
+    shift
+    ;;
+  remote)
+    TARGET="remote"
+    shift
+    ;;
+  *)
+    TARGET="local"
+    ;;
+esac
+
+# Choose local command
+if [ $TARGET == "local" ]; then
+  case "$1" in
+    configure)
+      COMMAND="configure"
+      ;;
+    setup)
+      COMMAND="setup"
+      ;;
+    run)
+      COMMAND="run"
+      ;;
+    import)
+      COMMAND="import"
+      ;;
+    export)
+      COMMAND="export"
+      ;;
+    *)
+      echo "Missing local command."
+      echo
+      usage
+      ;;
+  esac
+  shift
+
+  # Local command options
+  while [ $# -gt 0 ]; do
+    case "$1" in
+      --domain)
+        DOMAIN="$2"
+        shift
+        ;;
+      --vendor)
+        VENDOR="$2"
+        shift
+        ;;
+      -p|--port)
+        HTTP_PORT="$2"
+        shift
+        ;;
+      -f|--force)
+        FORCE="TRUE"
+        ;;
+      -i|--ignore)
+        IGNORE="TRUE"
+        ;;
+      -v|--verbose)
+        VERBOSE="TRUE"
+        ;;
+      *)
+        ARGS+=" $1"
+        ;;
+    esac
+    shift
+  done
+fi
+
+# Choose remote command
+if [ $TARGET == "remote" ]; then
+  case "$1" in
+    export)
+      COMMAND="export"
+      ;;
+    provision)
+      COMMAND="provision"
+      ;;
+    deploy)
+      COMMAND="deploy"
+      ;;
+    disable)
+      COMMAND="disable"
+      ;;
+    *)
+      echo "Missing remote command."
+      echo
+      usage
+      ;;
+  esac
+  shift
+
+  # Remote command options
+  while [ $# -gt 0 ]; do
+    case "$1" in
+      --env)
+        ENV="$2"
+        shift
+        ;;
+      --verbose)
+        VERBOSE="TRUE"
+        ;;
+      --import)
+        IMPORT="TRUE"
+        ;;
+      *)
+        ARGS+=" $1"
+        ;;
+    esac
+    shift
+  done
+fi
+
+# Read default settings from file
+if [ -f $CONFIG ]; then
+  source $CONFIG
+fi
+
+# Generate id
+if [ -z $ID ]; then
+  ID=$(($RANDOM+10000))
+fi
+
+# Read prefix interactively
+if [ -z $PREFIX ]; then
+  read -p "Prefix (ino): " prefix
+  PREFIX=${prefix:-"ino"}
+fi
+
+# Read name interactively
+if [ -z $NAME ]; then
+  read -p "Name (example): " name
+  NAME=${name:-"example"}
+fi
+
+# Read domain interactively
+if [ -z $DOMAIN ]; then
+  read -p "Domain (example.de): " domain
+  DOMAIN=${domain:-"example.de"}
+fi
+
+# Read vendor interactively
+if [ -z $VENDOR ]; then
+  read -p "Vendor (Example.ExampleDe): " vendor
+  VENDOR=${vendor:-"Example.ExampleDe"}
+fi
+
+# Set dependent variables
+HOST=$NAME
+DB_NAME=${DB_NAME:-${HOST//-/_}}
+DB_USER=${DB_USER:-$DB_NAME}
+DB_PASSWORD=${DB_PASSWORD:-$DB_NAME}
+
+# Save settings to config file
+cat > $CONFIG <<-EOF
+	ID="$ID"
+	PREFIX="$PREFIX"
+	NAME="$NAME"
+	DOMAIN="$DOMAIN"
+	VENDOR="$VENDOR"
+EOF
+
+#
+# Local commands
+#
+
+function configure() {
+  function replace_placeholders() {
+    local file=$1
+
+    if [ -f $file ]; then
+      sed -i "" \
+        -e "s/\headstart.example.de/$DOMAIN/" \
+        -e "s/\Headstart.HeadstartDe/$VENDOR/" \
+        $file
+    fi
+  }
+
+  function replace_db_placeholders() {
+    local file=$1
+
+    if [ -f $file ]; then
+      sed -i "" \
+        -e "s/dbname: headstart/dbname: $DB_NAME/g" \
+        -e "s/user: headstart/user: $DB_USER/g" \
+        -e "s/password: headstart/password: $DB_PASSWORD/g" \
+        $file
+    fi
+  }
+
+  # Suggest removing repository if it originates from cloning template
+  if [ -d .git ] &&
+     git config --get remote.origin.url | grep -Eq '/neos-headstart-template\.git$' &&
+     ! pwd | grep -Eq '/neos-headstart-template$'; then
+      if [ $REPO == "TRUE" ]; then
+        read -p "You appear to have cloned from template. Remove previous repository (y/n)? " -n 1 -r
+        echo
+        if [[ $REPLY =~ ^[Yy]$ ]]; then
+          rm -rf .git
+        fi
+      fi
+  fi
+
+  if [ -d Packages/Sites/Headstart.HeadstartDe ] && [ ! -d Packages/Sites/$VENDOR ]; then
+    echo "Renaming site..."
+    (cd Packages/Sites/; mv Headstart.HeadstartDe $VENDOR)
+  fi
+
+  echo "Replacing placeholders..."
+
+  # Environment
+  replace_placeholders .envrc
+
+  # Database
+  replace_db_placeholders Configuration/Settings.yaml
+
+  # Site
+  replace_placeholders Packages/Sites/$VENDOR/composer.json
+
+  # Deployment
+  replace_placeholders Dockerfile
+
+  # Site
+  LANG=C
+  replace_placeholders bin/webpack
+  find Packages/Sites/$VENDOR -type f \
+    -iname "*.html" -o \
+    -iname "*.fusion" -o \
+    -iname "*.xml" \
+    | xargs sed -i "" \
+        -e "s/headstart.example.de/$DOMAIN/" \
+        -e "s/Headstart.HeadstartDe/$VENDOR/"
+}
+
+function setup() {
+  echo "Installing composer packages..."
+  try composer install --no-dev --prefer-dist
+  [ -f flow.bat ] && rm flow.bat
+  [ -f Readme.rst ] && rm Readme.*
+  [ -f Upgrading.rst ] && rm Upgrading.*
+
+  echo "Installing node modules..."
+  cd Packages/Sites/$VENDOR/Resources
+  try npm install
+  cd $OLDPWD
+
+  # Create repository if it does not exist yet, or was removed in previous step
+  if [ ! -d .git ]; then
+    echo "Setting up repository..."
+    git init >/dev/null
+    git add . >/dev/null
+    git commit -m Initial\ commit >/dev/null
+  fi
+
+  if [ $FORCE == "TRUE" ]; then
+    echo "Dropping database..."
+    try $MYSQL -u root -h localhost <<-EOF
+			DROP DATABASE IF EXISTS $DB_NAME;
+		EOF
+  fi
+
+  echo "Creating database..."
+  try $MYSQL -u root -h localhost <<-EOF
+		CREATE DATABASE $DB_NAME CHARACTER SET utf8;
+	EOF
+
+  echo "Granting privileges..."
+  try $MYSQL -u root -h localhost <<-EOF
+		GRANT ALL ON $DB_NAME.* TO '$DB_USER'@'%' IDENTIFIED BY '$DB_PASSWORD' WITH GRANT OPTION;
+	EOF
+
+  echo "Migrating database..."
+  try $FLOW flow:doctrine:migrate
+
+  if ! $FLOW neos:user:list | grep --silent "admin"; then
+    echo "Creating user..."
+    try $FLOW neos:user:create --username "admin" --password "secret123" --first-name "Admin" --last-name "User"
+    try $FLOW neos:user:addrole --username "admin" --role "Administrator"
+  fi
+
+  echo "Importing site..."
+  local_import_site
+
+  echo "Warming up cache..."
+  try $FLOW neos.flow:cache:warmup
+
+  echo "Generating assets..."
+  (
+    cd Packages/Sites/$VENDOR/Resources
+    try node_modules/.bin/webpack >/dev/null
+  )
+
+  echo
+  cat <<-EOF
+		# Whitelist .envrc
+		$ direnv allow
+
+		# Start built-in webserver
+		$ ./headstart run
+
+		# Customize site
+		$ cd Packages/Sites/$VENDOR
+	EOF
+  echo
+}
+
+function run() {
+  # http://stackoverflow.com/questions/360201/kill-background-process-when-shell-script-exit
+  trap "trap - SIGTERM && kill -- -$$" SIGINT SIGTERM EXIT
+
+  HTTP_PORT=${HTTP_PORT:-9000}
+  HTTP_HOST=${HTTP_HOST:-"localhost"}
+
+  echo "Running server (http://$HTTP_HOST:$HTTP_PORT)..."
+  php -S $HTTP_HOST:$HTTP_PORT -t Web &>/dev/null &
+  echo "Running webpack..."
+  bin/webpack --watch --hide-modules $ARGS
+}
+
+function local_import_site() {
+  echo "Importing site..."
+  if $FLOW neos:site:list &>/dev/null; then
+    try $FLOW neos:site:prune --site-node site
+    try $FLOW neos:site:create --name $NAME --package-key $VENDOR
+  fi
+  try $FLOW neos:site:import --package-key $VENDOR
+}
+
+function local_export_site() {
+  echo "Updating Sites.xml..."
+  try $FLOW neos:site:export --tidy --package-key $VENDOR
+}
+
+#
+# Remote commands
+#
+function require_inventory() {
+  if [ -z $INSTN_INVENTORY ]; then
+    echo "Missing INSTN_INVENTORY"
+    echo
+    usage
+  fi
+
+  if [ ! -d $INSTN_INVENTORY ]; then
+    echo "Invalid INSTN_INVENTORY"
+    echo
+    usage
+  fi
+}
+
+function require_playbook() {
+  require_inventory
+
+  if [ -z $INSTN_NEOS_ANSIBLE ]; then
+    echo "Missing INSTN_NEOS_ANSIBLE"
+    echo
+    usage
+  fi
+
+  if [ ! -f $INSTN_NEOS_ANSIBLE/$PLAYBOOK ]; then
+    echo "Missing playbook $PLAYBOOK"
+    echo
+    usage
+  fi
+}
+
+function provision() {
+  require_playbook
+  echo "Provisioning ($HOST/$ENV)..."
+  cd $INSTN_NEOS_ANSIBLE
+  try IMPORT=$IMPORT UPDATE=$UPDATE NO_CACHE=$NO_CACHE ansible-playbook -i $INSTN_INVENTORY/$ENV -l ${PREFIX}_${NAME} \
+    $PLAYBOOK $ARGS
+}
+
+function deploy() {
+  function run_deploy_script() {
+    local host=$1
+    local ssh="ssh -A deploy@$host"
+
+    if [ -n "$ARGS" ]; then
+      ssh="$ssh $ARGS"
+    fi
+
+    echo "Deploying to $host..."
+    try $ssh IMPORT=$IMPORT UPDATE=$UPDATE NO_CACHE=$NO_CACHE deploy-$PREFIX-$NAME
+  }
+
+  if [ "$ENV" == "development" ]; then
+    run_deploy_script ${NODE_DEVELOPMENT[0]}
+  fi
+
+  if [ "$ENV" == "staging" ]; then
+    run_deploy_script ${NODE_STAGING[0]}
+  fi
+
+  if [ "$ENV" == "production" ]; then
+    run_deploy_script ${NODE_PRODUCTION[0]}
+  fi
+}
+
+function disable() {
+  require_playbook
+  echo "Disabling ($HOST/$ENV)..."
+  cd $INSTN_NEOS_ANSIBLE
+  try ansible-playbook -i $INSTN_INVENTORY/$ENV -l ${PREFIX}_${NAME} -e \'{\"enabled\": false}\' \
+    $PLAYBOOK $ARGS
+}
+
+function remote_export_site() {
+  function run_export_script() {
+    local host=$1
+    ssh deploy@$host "deploy-$PREFIX-$NAME export"
+  }
+
+  local host
+  local tarfile=".${HOST}_web.tar"
+
+  if [ "$ENV" == "development" ]; then
+    host=${NODE_DEVELOPMENT[0]};
+  fi
+
+  if [ "$ENV" == "staging" ]; then
+    host=${NODE_STAGING[0]};
+  fi
+
+  if [ "$ENV" == "production" ]; then
+    host=${NODE_PRODUCTION[0]};
+  fi
+
+  if [ -n $host ]; then
+    echo "Exporting from $host..."
+    run_export_script $host > $tarfile
+    echo "Updating Sites.xml..."
+    tar -xf $tarfile -C $PROJECT_ROOT/Packages/Sites/$VENDOR/Resources/Private/Content
+    rm $tarfile
+  fi
+}
+
+#
+# Run commands
+#
+
+if [ $TARGET == "local" ]; then
+  case "$COMMAND" in
+    configure)
+      configure
+      ;;
+    setup)
+      configure
+      setup
+      ;;
+    run)
+      run
+      ;;
+    import)
+      local_import_site
+      ;;
+    export)
+      local_export_site
+      ;;
+  esac
+fi
+
+if [ $TARGET == "remote" ]; then
+  case "$COMMAND" in
+    provision)
+      provision
+      ;;
+    deploy)
+      deploy
+      ;;
+    export)
+      remote_export_site
+      ;;
+    disable)
+      disable
+      ;;
+  esac
+fi

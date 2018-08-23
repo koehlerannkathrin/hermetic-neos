@@ -1,0 +1,10 @@
+Neos:
+  Imagine:
+    driver: Gd
+  Flow:
+    persistence:
+      backendOptions:
+        driver: pdo_mysql
+        dbname: hermetic
+        user: hermetic
+        password: hermetic

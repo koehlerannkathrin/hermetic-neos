@@ -1,0 +1,31 @@
+.panel-heading {
+  position: relative;
+  padding-right: 50px;
+
+  &[data-toggle="collapse"] {
+    cursor: pointer;
+
+    &::after {
+      @extend .glyphicon;
+      position: absolute;
+      right: 15px;
+      top: 6px;
+      font-size: 25px;
+      line-height: 1;
+      display: inline;
+    }
+
+    &::after {
+      transition: transform 400ms;
+      content: "\e252"; // glphyicon-triangle-bottom
+    }
+
+    &.collapsed::after {
+      transform: rotateX(180deg);
+    }
+  }
+
+  h1, h2, h3, h4 {
+    @extend .panel-title;
+  }
+}

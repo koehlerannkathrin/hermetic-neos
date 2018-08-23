@@ -1,0 +1,40 @@
+.callout {
+  margin: 0 auto !important;
+  border-top: 1px solid; //#bfbfbf;
+  border-bottom: 1px solid; //#bfbfbf;
+
+  @media (max-width: $screen-xs-max) {
+    display: none;
+  }
+
+  .item {
+    height: 250px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: $brand-secondary;
+
+    @media (min-width: $screen-lg) {
+      height: 523px;
+    }
+  }
+}
+
+.callout-caption {
+  @extend .container;
+  height: 100%;
+}
+
+.callout-caption-box {
+  display: none;
+  position: absolute;
+  padding: 20px;
+  background-color: $callout-caption-bgcolor;
+  color: $color-green; //vorher -> $brand-primary
+
+  @media (min-width: $screen-sm-min) {
+    display: block;
+    left: 15%;
+    top: 40%;
+    width: 350px;
+  }
+}

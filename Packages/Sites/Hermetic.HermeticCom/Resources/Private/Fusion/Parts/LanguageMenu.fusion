@@ -1,0 +1,6 @@
+prototype(Hermetic.HermeticCom:Parts.LanguageMenu) < prototype(Neos.Neos:DimensionMenu) {
+  templatePath = 'resource://Hermetic.HermeticCom/Private/Templates/Parts/LanguageMenu.html'
+  dimension = 'language'
+  attributes.class = 'languages-list'
+  presets = ${['de', 'en']}
+}

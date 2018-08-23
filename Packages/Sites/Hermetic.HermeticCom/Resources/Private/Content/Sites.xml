@@ -1,0 +1,1331 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+ <site name="cadkon.com" state="1" siteResourcesPackageKey="Hermetic.HermeticCom" siteNodeName="site">
+  <nodes formatVersion="2.0">
+   <node identifier="5e999ddf-8f2b-9253-c2c8-56d64ef131b5" nodeName="site">
+    <variant sortingIndex="100" workspace="live" nodeType="Instanode.Headstart:Callout.Page" version="7" removed="" hidden="" hiddenInIndex="">
+     <dimensions>
+      <language>de</language>
+     </dimensions>
+     <accessRoles __type="array"/>
+     <creationDateTime __type="object" __classname="DateTime">2015-09-15T19:02:36+02:00</creationDateTime>
+     <lastModificationDateTime __type="object" __classname="DateTime">2018-06-25T15:53:51+02:00</lastModificationDateTime>
+     <lastPublicationDateTime __type="object" __classname="DateTime">2016-02-24T15:28:03+01:00</lastPublicationDateTime>
+     <properties>
+      <title __type="string">Home</title>
+      <uriPathSegment __type="string">home</uriPathSegment>
+     </properties>
+    </variant>
+    <variant sortingIndex="100" workspace="live" nodeType="Instanode.Headstart:Callout.Page" version="3" removed="" hidden="" hiddenInIndex="">
+     <dimensions>
+      <language>en</language>
+     </dimensions>
+     <accessRoles __type="array"/>
+     <creationDateTime __type="object" __classname="DateTime">2018-06-20T11:51:18+02:00</creationDateTime>
+     <lastModificationDateTime __type="object" __classname="DateTime">2018-06-25T15:53:51+02:00</lastModificationDateTime>
+     <lastPublicationDateTime __type="object" __classname="DateTime">2018-06-20T11:51:25+02:00</lastPublicationDateTime>
+     <properties>
+      <title __type="string">Home</title>
+      <uriPathSegment __type="string">home</uriPathSegment>
+     </properties>
+    </variant>
+    <node identifier="811c0ad0-a6aa-b19a-08fa-288ba5432488" nodeName="carousel">
+     <variant sortingIndex="550" workspace="live" nodeType="Neos.Neos:ContentCollection" version="4" removed="" hidden="" hiddenInIndex="">
+      <dimensions>
+       <language>de</language>
+      </dimensions>
+      <accessRoles __type="array"/>
+      <creationDateTime __type="object" __classname="DateTime">2016-02-24T15:27:59+01:00</creationDateTime>
+      <lastModificationDateTime __type="object" __classname="DateTime">2018-06-26T11:35:33+02:00</lastModificationDateTime>
+      <lastPublicationDateTime __type="object" __classname="DateTime">2016-02-24T15:28:03+01:00</lastPublicationDateTime>
+      <properties/>
+     </variant>
+     <variant sortingIndex="550" workspace="live" nodeType="Neos.Neos:ContentCollection" version="2" removed="" hidden="" hiddenInIndex="">
+      <dimensions>
+       <language>en</language>
+      </dimensions>
+      <accessRoles __type="array"/>
+      <creationDateTime __type="object" __classname="DateTime">2018-06-20T11:51:18+02:00</creationDateTime>
+      <lastModificationDateTime __type="object" __classname="DateTime">2018-06-20T11:51:25+02:00</lastModificationDateTime>
+      <lastPublicationDateTime __type="object" __classname="DateTime">2018-06-20T11:51:25+02:00</lastPublicationDateTime>
+      <properties/>
+     </variant>
+     <node identifier="fa68d70c-981d-4bd8-479a-2383b05a5123" nodeName="node-56cdbe01e5a03">
+      <variant sortingIndex="100" workspace="live" nodeType="Instanode.Headstart:Callout.Image" version="8" removed="" hidden="" hiddenInIndex="">
+       <dimensions>
+        <language>de</language>
+       </dimensions>
+       <accessRoles __type="array"/>
+       <creationDateTime __type="object" __classname="DateTime">2016-02-24T15:28:17+01:00</creationDateTime>
+       <lastModificationDateTime __type="object" __classname="DateTime">2018-06-25T15:53:51+02:00</lastModificationDateTime>
+       <lastPublicationDateTime __type="object" __classname="DateTime">2018-06-25T15:46:32+02:00</lastPublicationDateTime>
+       <properties>
+        <image __type="object" __identifier="da983410-78d3-4037-a2aa-2ba62d17291d" __classname="Neos\Media\Domain\Model\Image" __encoding="json">{&quot;__identity&quot;:&quot;da983410-78d3-4037-a2aa-2ba62d17291d&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Image&quot;,&quot;title&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;cadkon-sliderbild.jpg&quot;,&quot;collectionName&quot;:&quot;persistent&quot;,&quot;relativePublicationPath&quot;:&quot;&quot;,&quot;mediaType&quot;:&quot;image\/jpeg&quot;,&quot;sha1&quot;:&quot;7ec84cc75962000a597965ffab7e868e427ba376&quot;,&quot;hash&quot;:&quot;7ec84cc75962000a597965ffab7e868e427ba376&quot;,&quot;__identity&quot;:&quot;2f7fd751-3ea3-4189-8545-12055cfa81bc&quot;}}</image>
+        <caption __type="string">&lt;p&gt;Lorem ipsum dolor. Ut enim.&lt;/p&gt;</caption>
+       </properties>
+      </variant>
+     </node>
+     <node identifier="8f572572-2fd2-a180-6255-2545c95c1ce3" nodeName="node-56cdbe4f58696">
+      <variant sortingIndex="125" workspace="live" nodeType="Instanode.Headstart:Callout.Image" version="7" removed="" hidden="" hiddenInIndex="">
+       <dimensions>
+        <language>de</language>
+       </dimensions>
+       <accessRoles __type="array"/>
+       <creationDateTime __type="object" __classname="DateTime">2016-02-24T15:29:35+01:00</creationDateTime>
+       <lastModificationDateTime __type="object" __classname="DateTime">2018-06-25T15:53:51+02:00</lastModificationDateTime>
+       <lastPublicationDateTime __type="object" __classname="DateTime">2018-06-25T15:46:32+02:00</lastPublicationDateTime>
+       <properties>
+        <image __type="object" __identifier="b1a45ab7-94e0-4ecc-a3cc-8eb1a4fd7ca2" __classname="Neos\Media\Domain\Model\Image" __encoding="json">{&quot;__identity&quot;:&quot;b1a45ab7-94e0-4ecc-a3cc-8eb1a4fd7ca2&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Image&quot;,&quot;title&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;cadkon-sliderbild-alternative.jpg&quot;,&quot;collectionName&quot;:&quot;persistent&quot;,&quot;relativePublicationPath&quot;:&quot;&quot;,&quot;mediaType&quot;:&quot;image\/jpeg&quot;,&quot;sha1&quot;:&quot;459c760a4bd962d191534acbbee26375f9b87d1c&quot;,&quot;hash&quot;:&quot;459c760a4bd962d191534acbbee26375f9b87d1c&quot;,&quot;__identity&quot;:&quot;ee80b372-4fd6-452d-8907-01c13ecaf3e4&quot;}}</image>
+       </properties>
+      </variant>
+     </node>
+     <node identifier="3506e6e2-23c9-4f6a-a493-9b7e768e1c52" nodeName="node-am350w068tp6p">
+      <variant sortingIndex="225" workspace="live" nodeType="Instanode.Headstart:Callout.Image" version="3" removed="" hidden="" hiddenInIndex="">
+       <dimensions>
+        <language>en</language>
+       </dimensions>
+       <accessRoles __type="array"/>
+       <creationDateTime __type="object" __classname="DateTime">2018-06-25T15:56:38+02:00</creationDateTime>
+       <lastModificationDateTime __type="object" __classname="DateTime">2018-06-25T15:56:52+02:00</lastModificationDateTime>
+       <lastPublicationDateTime __type="object" __classname="DateTime">2018-06-25T15:56:52+02:00</lastPublicationDateTime>
+       <properties>
+        <image __type="object" __identifier="da983410-78d3-4037-a2aa-2ba62d17291d" __classname="Neos\Media\Domain\Model\Image" __encoding="json">{&quot;__identity&quot;:&quot;da983410-78d3-4037-a2aa-2ba62d17291d&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Image&quot;,&quot;title&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;cadkon-sliderbild.jpg&quot;,&quot;collectionName&quot;:&quot;persistent&quot;,&quot;relativePublicationPath&quot;:&quot;&quot;,&quot;mediaType&quot;:&quot;image\/jpeg&quot;,&quot;sha1&quot;:&quot;7ec84cc75962000a597965ffab7e868e427ba376&quot;,&quot;hash&quot;:&quot;7ec84cc75962000a597965ffab7e868e427ba376&quot;,&quot;__identity&quot;:&quot;2f7fd751-3ea3-4189-8545-12055cfa81bc&quot;}}</image>
+       </properties>
+      </variant>
+     </node>
+     <node identifier="89ac85e5-9150-4060-a57e-993a035a1f45" nodeName="node-roc4saeuuiiy8">
+      <variant sortingIndex="275" workspace="live" nodeType="Instanode.Headstart:Callout.Image" version="4" removed="" hidden="" hiddenInIndex="">
+       <dimensions>
+        <language>en</language>
+       </dimensions>
+       <accessRoles __type="array"/>
+       <creationDateTime __type="object" __classname="DateTime">2018-06-25T15:56:46+02:00</creationDateTime>
+       <lastModificationDateTime __type="object" __classname="DateTime">2018-06-25T15:56:52+02:00</lastModificationDateTime>
+       <lastPublicationDateTime __type="object" __classname="DateTime">2018-06-25T15:56:52+02:00</lastPublicationDateTime>
+       <properties>
+        <image __type="object" __identifier="b1a45ab7-94e0-4ecc-a3cc-8eb1a4fd7ca2" __classname="Neos\Media\Domain\Model\Image" __encoding="json">{&quot;__identity&quot;:&quot;b1a45ab7-94e0-4ecc-a3cc-8eb1a4fd7ca2&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Image&quot;,&quot;title&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;cadkon-sliderbild-alternative.jpg&quot;,&quot;collectionName&quot;:&quot;persistent&quot;,&quot;relativePublicationPath&quot;:&quot;&quot;,&quot;mediaType&quot;:&quot;image\/jpeg&quot;,&quot;sha1&quot;:&quot;459c760a4bd962d191534acbbee26375f9b87d1c&quot;,&quot;hash&quot;:&quot;459c760a4bd962d191534acbbee26375f9b87d1c&quot;,&quot;__identity&quot;:&quot;ee80b372-4fd6-452d-8907-01c13ecaf3e4&quot;}}</image>
+       </properties>
+      </variant>
+     </node>
+    </node>
+    <node identifier="81b028de-2a3c-b7bb-2a07-520164b98b8b" nodeName="main">
+     <variant sortingIndex="100" workspace="live" nodeType="Neos.Neos:ContentCollection" version="2" removed="" hidden="" hiddenInIndex="">
+      <dimensions>
+       <language>de</language>
+      </dimensions>
+      <accessRoles __type="array"/>
+      <creationDateTime __type="object" __classname="DateTime">2015-09-15T19:02:37+02:00</creationDateTime>
+      <lastModificationDateTime __type="object" __classname="DateTime">2015-09-15T19:37:25+02:00</lastModificationDateTime>
+      <properties/>
+     </variant>
+     <variant sortingIndex="100" workspace="live" nodeType="Neos.Neos:ContentCollection" version="2" removed="" hidden="" hiddenInIndex="">
+      <dimensions>
+       <language>en</language>
+      </dimensions>
+      <accessRoles __type="array"/>
+      <creationDateTime __type="object" __classname="DateTime">2018-06-20T11:51:18+02:00</creationDateTime>
+      <lastModificationDateTime __type="object" __classname="DateTime">2018-06-20T11:51:25+02:00</lastModificationDateTime>
+      <lastPublicationDateTime __type="object" __classname="DateTime">2018-06-20T11:51:25+02:00</lastPublicationDateTime>
+      <properties/>
+     </variant>
+     <node identifier="42f93830-aa19-3e58-4561-15be13eb2f4e" nodeName="node-55f864894917a">
+      <variant sortingIndex="200" workspace="live" nodeType="Instanode.Headstart:GridContent" version="2" removed="" hidden="" hiddenInIndex="">
+       <dimensions>
+        <language>en</language>
+       </dimensions>
+       <accessRoles __type="array"/>
+       <creationDateTime __type="object" __classname="DateTime">2018-06-20T11:51:18+02:00</creationDateTime>
+       <lastModificationDateTime __type="object" __classname="DateTime">2018-06-20T11:51:25+02:00</lastModificationDateTime>
+       <lastPublicationDateTime __type="object" __classname="DateTime">2018-06-20T11:51:25+02:00</lastPublicationDateTime>
+       <properties/>
+      </variant>
+      <variant sortingIndex="200" workspace="live" nodeType="Instanode.Headstart:GridContent" version="4" removed="" hidden="" hiddenInIndex="">
+       <dimensions>
+        <language>de</language>
+       </dimensions>
+       <accessRoles __type="array"/>
+       <creationDateTime __type="object" __classname="DateTime">2015-09-15T20:33:45+02:00</creationDateTime>
+       <lastModificationDateTime __type="object" __classname="DateTime">2018-06-27T10:32:16+02:00</lastModificationDateTime>
+       <lastPublicationDateTime __type="object" __classname="DateTime">2018-06-27T10:32:16+02:00</lastPublicationDateTime>
+       <properties>
+        <extraClassesPre __type="array">
+         <entry0 __type="string">divider</entry0>
+        </extraClassesPre>
+       </properties>
+      </variant>
+      <node identifier="7836171e-ee53-8661-628b-f39547d79543" nodeName="columns">
+       <variant sortingIndex="100" workspace="live" nodeType="Instanode.Headstart:GridContent.Collection" version="4" removed="" hidden="" hiddenInIndex="">
+        <dimensions>
+         <language>de</language>
+        </dimensions>
+        <accessRoles __type="array"/>
+        <creationDateTime __type="object" __classname="DateTime">2015-09-15T20:33:45+02:00</creationDateTime>
+        <lastModificationDateTime __type="object" __classname="DateTime">2018-06-27T10:32:16+02:00</lastModificationDateTime>
+        <lastPublicationDateTime __type="object" __classname="DateTime">2018-06-27T10:32:16+02:00</lastPublicationDateTime>
+        <properties/>
+       </variant>
+       <variant sortingIndex="100" workspace="live" nodeType="Instanode.Headstart:GridContent.Collection" version="2" removed="" hidden="" hiddenInIndex="">
+        <dimensions>
+         <language>en</language>
+        </dimensions>
+        <accessRoles __type="array"/>
+        <creationDateTime __type="object" __classname="DateTime">2018-06-20T11:51:18+02:00</creationDateTime>
+        <lastModificationDateTime __type="object" __classname="DateTime">2018-06-20T11:51:25+02:00</lastModificationDateTime>
+        <lastPublicationDateTime __type="object" __classname="DateTime">2018-06-20T11:51:25+02:00</lastPublicationDateTime>
+        <properties/>
+       </variant>
+       <node identifier="ba3c5e7a-b661-2397-5aa1-c35f2dd905ca" nodeName="column">
+        <variant sortingIndex="100" workspace="live" nodeType="Instanode.Headstart:GridContent.Column" version="5" removed="" hidden="" hiddenInIndex="">
+         <dimensions>
+          <language>de</language>
+         </dimensions>
+         <accessRoles __type="array"/>
+         <creationDateTime __type="object" __classname="DateTime">2015-09-15T20:33:45+02:00</creationDateTime>
+         <lastModificationDateTime __type="object" __classname="DateTime">2018-06-27T10:32:16+02:00</lastModificationDateTime>
+         <lastPublicationDateTime __type="object" __classname="DateTime">2018-06-27T10:32:16+02:00</lastPublicationDateTime>
+         <properties>
+          <columnWidth __type="string">col-8</columnWidth>
+         </properties>
+        </variant>
+        <variant sortingIndex="100" workspace="live" nodeType="Instanode.Headstart:GridContent.Column" version="2" removed="" hidden="" hiddenInIndex="">
+         <dimensions>
+          <language>en</language>
+         </dimensions>
+         <accessRoles __type="array"/>
+         <creationDateTime __type="object" __classname="DateTime">2018-06-20T11:51:18+02:00</creationDateTime>
+         <lastModificationDateTime __type="object" __classname="DateTime">2018-06-20T11:51:25+02:00</lastModificationDateTime>
+         <lastPublicationDateTime __type="object" __classname="DateTime">2018-06-20T11:51:25+02:00</lastPublicationDateTime>
+         <properties>
+          <columnWidth __type="string">col-8</columnWidth>
+         </properties>
+        </variant>
+        <node identifier="15655f65-cdfc-db10-91bb-c871468c2743" nodeName="content">
+         <variant sortingIndex="100" workspace="live" nodeType="Neos.Neos:ContentCollection" version="4" removed="" hidden="" hiddenInIndex="">
+          <dimensions>
+           <language>de</language>
+          </dimensions>
+          <accessRoles __type="array"/>
+          <creationDateTime __type="object" __classname="DateTime">2015-09-15T20:33:45+02:00</creationDateTime>
+          <lastModificationDateTime __type="object" __classname="DateTime">2018-06-27T10:32:16+02:00</lastModificationDateTime>
+          <lastPublicationDateTime __type="object" __classname="DateTime">2018-06-27T10:32:16+02:00</lastPublicationDateTime>
+          <properties/>
+         </variant>
+         <variant sortingIndex="100" workspace="live" nodeType="Neos.Neos:ContentCollection" version="2" removed="" hidden="" hiddenInIndex="">
+          <dimensions>
+           <language>en</language>
+          </dimensions>
+          <accessRoles __type="array"/>
+          <creationDateTime __type="object" __classname="DateTime">2018-06-20T11:51:18+02:00</creationDateTime>
+          <lastModificationDateTime __type="object" __classname="DateTime">2018-06-20T11:51:25+02:00</lastModificationDateTime>
+          <lastPublicationDateTime __type="object" __classname="DateTime">2018-06-20T11:51:25+02:00</lastPublicationDateTime>
+          <properties/>
+         </variant>
+         <node identifier="9b1feafb-277f-61d1-3f01-cba000c3c6f4" nodeName="node-55f8649363ce6">
+          <variant sortingIndex="100" workspace="live" nodeType="Neos.NodeTypes:Headline" version="12" removed="" hidden="" hiddenInIndex="">
+           <dimensions>
+            <language>de</language>
+           </dimensions>
+           <accessRoles __type="array"/>
+           <creationDateTime __type="object" __classname="DateTime">2015-09-15T20:33:55+02:00</creationDateTime>
+           <lastModificationDateTime __type="object" __classname="DateTime">2018-06-19T14:32:21+02:00</lastModificationDateTime>
+           <lastPublicationDateTime __type="object" __classname="DateTime">2018-06-19T14:32:21+02:00</lastPublicationDateTime>
+           <properties>
+            <title __type="string">&lt;h1&gt;Cadkon.&lt;br/&gt;Ihr Partner für maßgeschneiderte &lt;br/&gt;Maschinenbauprojekte&lt;/h1&gt;</title>
+           </properties>
+          </variant>
+          <variant sortingIndex="100" workspace="live" nodeType="Neos.NodeTypes:Headline" version="2" removed="" hidden="" hiddenInIndex="">
+           <dimensions>
+            <language>en</language>
+           </dimensions>
+           <accessRoles __type="array"/>
+           <creationDateTime __type="object" __classname="DateTime">2018-06-20T11:51:18+02:00</creationDateTime>
+           <lastModificationDateTime __type="object" __classname="DateTime">2018-06-20T11:51:25+02:00</lastModificationDateTime>
+           <lastPublicationDateTime __type="object" __classname="DateTime">2018-06-20T11:51:25+02:00</lastPublicationDateTime>
+           <properties>
+            <title __type="string">&lt;h1&gt;Cadkon.&lt;br/&gt;Ihr Partner für maßgeschneiderte &lt;br/&gt;Maschinenbauprojekte&lt;/h1&gt;</title>
+           </properties>
+          </variant>
+         </node>
+         <node identifier="02070c10-78c5-d443-cb84-b5b27d58f9cb" nodeName="node-55f864a4c8498">
+          <variant sortingIndex="150" workspace="live" nodeType="Neos.NodeTypes:Text" version="11" removed="" hidden="" hiddenInIndex="">
+           <dimensions>
+            <language>de</language>
+           </dimensions>
+           <accessRoles __type="array"/>
+           <creationDateTime __type="object" __classname="DateTime">2015-09-15T20:34:12+02:00</creationDateTime>
+           <lastModificationDateTime __type="object" __classname="DateTime">2018-06-20T08:22:23+02:00</lastModificationDateTime>
+           <lastPublicationDateTime __type="object" __classname="DateTime">2018-06-20T08:22:22+02:00</lastPublicationDateTime>
+           <properties>
+            <text __type="string">&lt;p&gt;Cadkon GmbH ist ein mittelständisches Unternehmen aus Walldorf, mitten in der Metropolregion Rhein-Neckar. Für Ihr maßgeschneidertes Maschinenbauprojekt sind wir Ihr Partner: Wir unterstützen Ihre eigenen Kapazitäten im Bereich Konstruktion, bieten Teillösungen oder übernehmen für Sie die Realisierung Ihrer kompletten Anlage – vom ersten Entwurf, über Konstruktion, Maschinenbau bis hin zur Inbetriebnahme bei Ihnen vor Ort.&lt;/p&gt;</text>
+           </properties>
+          </variant>
+          <variant sortingIndex="150" workspace="live" nodeType="Neos.NodeTypes:Text" version="2" removed="" hidden="" hiddenInIndex="">
+           <dimensions>
+            <language>en</language>
+           </dimensions>
+           <accessRoles __type="array"/>
+           <creationDateTime __type="object" __classname="DateTime">2018-06-20T11:51:18+02:00</creationDateTime>
+           <lastModificationDateTime __type="object" __classname="DateTime">2018-06-20T11:51:25+02:00</lastModificationDateTime>
+           <lastPublicationDateTime __type="object" __classname="DateTime">2018-06-20T11:51:25+02:00</lastPublicationDateTime>
+           <properties>
+            <text __type="string">&lt;p&gt;Cadkon GmbH ist ein mittelständisches Unternehmen aus Walldorf, mitten in der Metropolregion Rhein-Neckar. Für Ihr maßgeschneidertes Maschinenbauprojekt sind wir Ihr Partner: Wir unterstützen Ihre eigenen Kapazitäten im Bereich Konstruktion, bieten Teillösungen oder übernehmen für Sie die Realisierung Ihrer kompletten Anlage – vom ersten Entwurf, über Konstruktion, Maschinenbau bis hin zur Inbetriebnahme bei Ihnen vor Ort.&lt;/p&gt;</text>
+           </properties>
+          </variant>
+         </node>
+        </node>
+       </node>
+       <node identifier="5a644306-a70f-0d4e-0b84-e5f85e207858" nodeName="node-55f864be63458">
+        <variant sortingIndex="150" workspace="live" nodeType="Instanode.Headstart:GridContent.Column" version="2" removed="" hidden="" hiddenInIndex="">
+         <dimensions>
+          <language>en</language>
+         </dimensions>
+         <accessRoles __type="array"/>
+         <creationDateTime __type="object" __classname="DateTime">2018-06-20T11:51:18+02:00</creationDateTime>
+         <lastModificationDateTime __type="object" __classname="DateTime">2018-06-20T11:51:25+02:00</lastModificationDateTime>
+         <lastPublicationDateTime __type="object" __classname="DateTime">2018-06-20T11:51:25+02:00</lastPublicationDateTime>
+         <properties>
+          <columnWidth __type="string">col-4</columnWidth>
+         </properties>
+        </variant>
+        <node identifier="3ca175db-e782-0020-86b3-5d5226c88bbd" nodeName="content">
+         <variant sortingIndex="100" workspace="live" nodeType="Neos.Neos:ContentCollection" version="2" removed="" hidden="" hiddenInIndex="">
+          <dimensions>
+           <language>en</language>
+          </dimensions>
+          <accessRoles __type="array"/>
+          <creationDateTime __type="object" __classname="DateTime">2018-06-20T11:51:18+02:00</creationDateTime>
+          <lastModificationDateTime __type="object" __classname="DateTime">2018-06-20T11:51:25+02:00</lastModificationDateTime>
+          <lastPublicationDateTime __type="object" __classname="DateTime">2018-06-20T11:51:25+02:00</lastPublicationDateTime>
+          <properties/>
+         </variant>
+        </node>
+       </node>
+      </node>
+     </node>
+     <node identifier="395f46a5-d17f-42d9-933c-c5e2e90da56c" nodeName="node-6xjfxxo061wkq">
+      <variant sortingIndex="400" workspace="live" nodeType="Instanode.Headstart:GridContent" version="3" removed="" hidden="" hiddenInIndex="">
+       <dimensions>
+        <language>de</language>
+       </dimensions>
+       <accessRoles __type="array"/>
+       <creationDateTime __type="object" __classname="DateTime">2018-06-27T10:50:59+02:00</creationDateTime>
+       <lastModificationDateTime __type="object" __classname="DateTime">2018-06-27T10:51:26+02:00</lastModificationDateTime>
+       <lastPublicationDateTime __type="object" __classname="DateTime">2018-06-27T10:51:26+02:00</lastPublicationDateTime>
+       <properties/>
+      </variant>
+      <node identifier="73768f99-2f72-9f89-7fe8-720f6d37c417" nodeName="columns">
+       <variant sortingIndex="100" workspace="live" nodeType="Instanode.Headstart:GridContent.Collection" version="2" removed="" hidden="" hiddenInIndex="">
+        <dimensions>
+         <language>de</language>
+        </dimensions>
+        <accessRoles __type="array"/>
+        <creationDateTime __type="object" __classname="DateTime">2018-06-27T10:50:59+02:00</creationDateTime>
+        <lastModificationDateTime __type="object" __classname="DateTime">2018-06-27T10:51:26+02:00</lastModificationDateTime>
+        <lastPublicationDateTime __type="object" __classname="DateTime">2018-06-27T10:51:26+02:00</lastPublicationDateTime>
+        <properties/>
+       </variant>
+       <node identifier="856fa56d-6866-1fc3-b369-5911758fe247" nodeName="column">
+        <variant sortingIndex="100" workspace="live" nodeType="Instanode.Headstart:GridContent.Column" version="2" removed="" hidden="" hiddenInIndex="">
+         <dimensions>
+          <language>de</language>
+         </dimensions>
+         <accessRoles __type="array"/>
+         <creationDateTime __type="object" __classname="DateTime">2018-06-27T10:50:59+02:00</creationDateTime>
+         <lastModificationDateTime __type="object" __classname="DateTime">2018-06-27T10:51:26+02:00</lastModificationDateTime>
+         <lastPublicationDateTime __type="object" __classname="DateTime">2018-06-27T10:51:26+02:00</lastPublicationDateTime>
+         <properties>
+          <columnWidth __type="string">col-6</columnWidth>
+         </properties>
+        </variant>
+        <node identifier="a5eb3d74-06ca-fc09-c34d-52a09db7497a" nodeName="content">
+         <variant sortingIndex="100" workspace="live" nodeType="Neos.Neos:ContentCollection" version="2" removed="" hidden="" hiddenInIndex="">
+          <dimensions>
+           <language>de</language>
+          </dimensions>
+          <accessRoles __type="array"/>
+          <creationDateTime __type="object" __classname="DateTime">2018-06-27T10:50:59+02:00</creationDateTime>
+          <lastModificationDateTime __type="object" __classname="DateTime">2018-06-27T10:51:26+02:00</lastModificationDateTime>
+          <lastPublicationDateTime __type="object" __classname="DateTime">2018-06-27T10:51:26+02:00</lastPublicationDateTime>
+          <properties/>
+         </variant>
+         <node identifier="86759376-1446-4ab3-af99-31ed776a70a1" nodeName="node-mrdf2d2o6x2sd">
+          <variant sortingIndex="100" workspace="live" nodeType="Neos.NodeTypes:Headline" version="6" removed="" hidden="" hiddenInIndex="">
+           <dimensions>
+            <language>de</language>
+           </dimensions>
+           <accessRoles __type="array"/>
+           <creationDateTime __type="object" __classname="DateTime">2018-06-27T10:51:12+02:00</creationDateTime>
+           <lastModificationDateTime __type="object" __classname="DateTime">2018-06-27T10:51:26+02:00</lastModificationDateTime>
+           <lastPublicationDateTime __type="object" __classname="DateTime">2018-06-27T10:51:26+02:00</lastPublicationDateTime>
+           <properties>
+            <title __type="string">&lt;h1&gt;Cadkon Neuigkeiten&lt;/h1&gt;</title>
+           </properties>
+          </variant>
+         </node>
+        </node>
+       </node>
+      </node>
+     </node>
+     <node identifier="7970dadd-b224-4bb3-9523-ed7385acd6af" nodeName="node-98a9e86toz32u">
+      <variant sortingIndex="350" workspace="live" nodeType="Instanode.Headstart:GridContent" version="4" removed="" hidden="" hiddenInIndex="">
+       <dimensions>
+        <language>de</language>
+       </dimensions>
+       <accessRoles __type="array"/>
+       <creationDateTime __type="object" __classname="DateTime">2018-06-26T12:26:28+02:00</creationDateTime>
+       <lastModificationDateTime __type="object" __classname="DateTime">2018-06-27T10:32:58+02:00</lastModificationDateTime>
+       <lastPublicationDateTime __type="object" __classname="DateTime">2018-06-27T10:32:58+02:00</lastPublicationDateTime>
+       <properties>
+        <extraClassesPre __type="array">
+         <entry0 __type="string">divider</entry0>
+        </extraClassesPre>
+       </properties>
+      </variant>
+      <node identifier="a4ec308c-625e-41fb-a2c1-50d09c898139" nodeName="columns">
+       <variant sortingIndex="100" workspace="live" nodeType="Instanode.Headstart:GridContent.Collection" version="3" removed="" hidden="" hiddenInIndex="">
+        <dimensions>
+         <language>de</language>
+        </dimensions>
+        <accessRoles __type="array"/>
+        <creationDateTime __type="object" __classname="DateTime">2018-06-26T12:26:28+02:00</creationDateTime>
+        <lastModificationDateTime __type="object" __classname="DateTime">2018-06-27T10:32:58+02:00</lastModificationDateTime>
+        <lastPublicationDateTime __type="object" __classname="DateTime">2018-06-27T10:32:58+02:00</lastPublicationDateTime>
+        <properties/>
+       </variant>
+       <node identifier="332b9c46-d638-4833-bc82-b22ab3d23ff8" nodeName="column">
+        <variant sortingIndex="100" workspace="live" nodeType="Instanode.Headstart:GridContent.Column" version="3" removed="" hidden="" hiddenInIndex="">
+         <dimensions>
+          <language>de</language>
+         </dimensions>
+         <accessRoles __type="array"/>
+         <creationDateTime __type="object" __classname="DateTime">2018-06-26T12:26:28+02:00</creationDateTime>
+         <lastModificationDateTime __type="object" __classname="DateTime">2018-06-27T10:32:58+02:00</lastModificationDateTime>
+         <lastPublicationDateTime __type="object" __classname="DateTime">2018-06-27T10:32:58+02:00</lastPublicationDateTime>
+         <properties>
+          <columnWidth __type="string">col-12</columnWidth>
+         </properties>
+        </variant>
+        <node identifier="4a2eea43-387a-4da4-aba2-0bd46eeed12c" nodeName="content">
+         <variant sortingIndex="100" workspace="live" nodeType="Neos.Neos:ContentCollection" version="3" removed="" hidden="" hiddenInIndex="">
+          <dimensions>
+           <language>de</language>
+          </dimensions>
+          <accessRoles __type="array"/>
+          <creationDateTime __type="object" __classname="DateTime">2018-06-26T12:26:28+02:00</creationDateTime>
+          <lastModificationDateTime __type="object" __classname="DateTime">2018-06-27T10:32:58+02:00</lastModificationDateTime>
+          <lastPublicationDateTime __type="object" __classname="DateTime">2018-06-27T10:32:58+02:00</lastPublicationDateTime>
+          <properties/>
+         </variant>
+         <node identifier="b28fb2c6-30b1-4465-a691-1f98ba6acc68" nodeName="node-i5icggjznq7q6">
+          <variant sortingIndex="100" workspace="live" nodeType="Neos.NodeTypes:TextWithImage" version="4" removed="" hidden="" hiddenInIndex="">
+           <dimensions>
+            <language>de</language>
+           </dimensions>
+           <accessRoles __type="array"/>
+           <creationDateTime __type="object" __classname="DateTime">2018-06-26T12:26:28+02:00</creationDateTime>
+           <lastModificationDateTime __type="object" __classname="DateTime">2018-06-26T12:32:38+02:00</lastModificationDateTime>
+           <lastPublicationDateTime __type="object" __classname="DateTime">2018-06-26T12:32:38+02:00</lastPublicationDateTime>
+           <properties>
+            <text __type="string">&lt;h2&gt;Unser Team&lt;/h2&gt;&lt;p&gt;Cadkon GmbH ist ein mittelständisches Unternehmen aus Walldorf, mitten in der Metropolregion Rhein-Neckar. Für Ihr maßgeschneidertes Maschinenbauprojekt sind wir Ihr Partner: Wir unterstützen Ihre eigenen Kapazitäten im Bereich Konstruktion, bieten Teillösungen oder übernehmen für Sie die Realisierung Ihrer kompletten Anlage – vom ersten Entwurf, über Konstruktion, Maschinenbau bis hin zur Inbetriebnahme bei Ihnen vor Ort.&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;#&quot;&gt;Zu Ihren Ansprechpartnern&lt;/a&gt;&lt;/p&gt;</text>
+            <alignment __type="string">left</alignment>
+            <image __type="object" __identifier="7869964a-f6c6-4cd4-96a4-511d5ec9e517" __classname="Neos\Media\Domain\Model\Image" __encoding="json">{&quot;__identity&quot;:&quot;7869964a-f6c6-4cd4-96a4-511d5ec9e517&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Image&quot;,&quot;title&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;DUMMY-cadkon-teaserbild-team.jpg&quot;,&quot;collectionName&quot;:&quot;persistent&quot;,&quot;relativePublicationPath&quot;:&quot;&quot;,&quot;mediaType&quot;:&quot;image\/jpeg&quot;,&quot;sha1&quot;:&quot;ee307b4e92f2607e5f36c45a25ca017bb1b7236b&quot;,&quot;hash&quot;:&quot;ee307b4e92f2607e5f36c45a25ca017bb1b7236b&quot;,&quot;__identity&quot;:&quot;4f46e45f-9f6e-41bb-b331-a1b9cb401a78&quot;}}</image>
+           </properties>
+          </variant>
+         </node>
+        </node>
+       </node>
+      </node>
+     </node>
+     <node identifier="c6edceb3-6a90-46d4-8403-4fe2468fb2dc" nodeName="node-onjusiu8kn8or">
+      <variant sortingIndex="225" workspace="live" nodeType="Instanode.Headstart:GridContent" version="4" removed="" hidden="" hiddenInIndex="">
+       <dimensions>
+        <language>de</language>
+       </dimensions>
+       <accessRoles __type="array"/>
+       <creationDateTime __type="object" __classname="DateTime">2018-06-26T12:31:38+02:00</creationDateTime>
+       <lastModificationDateTime __type="object" __classname="DateTime">2018-06-27T10:32:58+02:00</lastModificationDateTime>
+       <lastPublicationDateTime __type="object" __classname="DateTime">2018-06-27T10:32:58+02:00</lastPublicationDateTime>
+       <properties>
+        <extraClassesPre __type="array">
+         <entry0 __type="string">divider</entry0>
+        </extraClassesPre>
+       </properties>
+      </variant>
+      <node identifier="7ddda708-3dd8-c92d-569d-24b54dd839fd" nodeName="columns">
+       <variant sortingIndex="100" workspace="live" nodeType="Instanode.Headstart:GridContent.Collection" version="3" removed="" hidden="" hiddenInIndex="">
+        <dimensions>
+         <language>de</language>
+        </dimensions>
+        <accessRoles __type="array"/>
+        <creationDateTime __type="object" __classname="DateTime">2018-06-26T12:31:38+02:00</creationDateTime>
+        <lastModificationDateTime __type="object" __classname="DateTime">2018-06-27T10:32:58+02:00</lastModificationDateTime>
+        <lastPublicationDateTime __type="object" __classname="DateTime">2018-06-27T10:32:58+02:00</lastPublicationDateTime>
+        <properties/>
+       </variant>
+       <node identifier="80453173-85d0-8d64-22cb-24071e076c38" nodeName="column">
+        <variant sortingIndex="25" workspace="live" nodeType="Instanode.Headstart:GridContent.Column" version="5" removed="" hidden="" hiddenInIndex="">
+         <dimensions>
+          <language>de</language>
+         </dimensions>
+         <accessRoles __type="array"/>
+         <creationDateTime __type="object" __classname="DateTime">2018-06-26T12:31:38+02:00</creationDateTime>
+         <lastModificationDateTime __type="object" __classname="DateTime">2018-06-27T10:32:58+02:00</lastModificationDateTime>
+         <lastPublicationDateTime __type="object" __classname="DateTime">2018-06-27T10:32:58+02:00</lastPublicationDateTime>
+         <properties>
+          <columnWidth __type="string">col-5</columnWidth>
+         </properties>
+        </variant>
+        <node identifier="266ee213-1ab4-b802-86f9-d50828604814" nodeName="content">
+         <variant sortingIndex="100" workspace="live" nodeType="Neos.Neos:ContentCollection" version="4" removed="" hidden="" hiddenInIndex="">
+          <dimensions>
+           <language>de</language>
+          </dimensions>
+          <accessRoles __type="array"/>
+          <creationDateTime __type="object" __classname="DateTime">2018-06-26T12:31:38+02:00</creationDateTime>
+          <lastModificationDateTime __type="object" __classname="DateTime">2018-06-27T10:32:58+02:00</lastModificationDateTime>
+          <lastPublicationDateTime __type="object" __classname="DateTime">2018-06-27T10:32:58+02:00</lastPublicationDateTime>
+          <properties/>
+         </variant>
+         <node identifier="41d5b640-20ea-4346-9bbe-7211a2c20cdf" nodeName="node-t6ozs9py3t6mr">
+          <variant sortingIndex="100" workspace="live" nodeType="Neos.NodeTypes:Text" version="5" removed="" hidden="" hiddenInIndex="">
+           <dimensions>
+            <language>de</language>
+           </dimensions>
+           <accessRoles __type="array"/>
+           <creationDateTime __type="object" __classname="DateTime">2018-06-26T12:34:05+02:00</creationDateTime>
+           <lastModificationDateTime __type="object" __classname="DateTime">2018-06-26T12:34:17+02:00</lastModificationDateTime>
+           <lastPublicationDateTime __type="object" __classname="DateTime">2018-06-26T12:34:16+02:00</lastPublicationDateTime>
+           <properties>
+            <text __type="string">&lt;p&gt;Video&lt;/p&gt;</text>
+           </properties>
+          </variant>
+         </node>
+        </node>
+       </node>
+       <node identifier="5a644306-a70f-0d4e-0b84-e5f85e207858" nodeName="node-55f864be63458">
+        <variant sortingIndex="50" workspace="live" nodeType="Instanode.Headstart:GridContent.Column" version="5" removed="" hidden="" hiddenInIndex="">
+         <dimensions>
+          <language>de</language>
+         </dimensions>
+         <accessRoles __type="array"/>
+         <creationDateTime __type="object" __classname="DateTime">2015-09-15T20:34:38+02:00</creationDateTime>
+         <lastModificationDateTime __type="object" __classname="DateTime">2018-06-26T12:34:17+02:00</lastModificationDateTime>
+         <lastPublicationDateTime __type="object" __classname="DateTime">2018-06-26T12:34:16+02:00</lastPublicationDateTime>
+         <properties>
+          <columnWidth __type="string">col-7</columnWidth>
+         </properties>
+        </variant>
+        <node identifier="3ca175db-e782-0020-86b3-5d5226c88bbd" nodeName="content">
+         <variant sortingIndex="100" workspace="live" nodeType="Neos.Neos:ContentCollection" version="3" removed="" hidden="" hiddenInIndex="">
+          <dimensions>
+           <language>de</language>
+          </dimensions>
+          <accessRoles __type="array"/>
+          <creationDateTime __type="object" __classname="DateTime">2015-09-15T20:34:38+02:00</creationDateTime>
+          <lastModificationDateTime __type="object" __classname="DateTime">2018-06-26T12:34:17+02:00</lastModificationDateTime>
+          <lastPublicationDateTime __type="object" __classname="DateTime">2018-06-26T12:34:16+02:00</lastPublicationDateTime>
+          <properties/>
+         </variant>
+         <node identifier="a7711574-4974-40ba-a2be-48ad094bb337" nodeName="node-b9ajtxu8aldlb">
+          <variant sortingIndex="100" workspace="live" nodeType="Neos.NodeTypes:Text" version="13" removed="" hidden="" hiddenInIndex="">
+           <dimensions>
+            <language>de</language>
+           </dimensions>
+           <accessRoles __type="array"/>
+           <creationDateTime __type="object" __classname="DateTime">2018-06-26T12:34:21+02:00</creationDateTime>
+           <lastModificationDateTime __type="object" __classname="DateTime">2018-06-27T10:08:02+02:00</lastModificationDateTime>
+           <lastPublicationDateTime __type="object" __classname="DateTime">2018-06-27T10:08:02+02:00</lastPublicationDateTime>
+           <properties>
+            <text __type="string">&lt;h2&gt;Maschinenbauprojekte in der Pharmaindustrie: Abfüllanlagen&lt;/h2&gt;&lt;p&gt;Für Ihr maßgeschneidertes Maschinenbauprojekt sind wir Ihr Partner: Wir unterstützen Ihre eigenen Kapazitäten im Bereich Konstruktion, bieten Teillösungen oder übernehmen für Sie die Realisierung Ihrer kompletten Anlage – vom ersten Entwurf.&lt;br/&gt;&lt;/p&gt;</text>
+           </properties>
+          </variant>
+         </node>
+        </node>
+       </node>
+      </node>
+     </node>
+     <node identifier="b27f09a7-f0cf-4d95-a259-1f285a80f3a0" nodeName="node-wf8x6lf0fw1x4">
+      <variant sortingIndex="250" workspace="live" nodeType="Instanode.Headstart:GridContent" version="4" removed="" hidden="" hiddenInIndex="">
+       <dimensions>
+        <language>de</language>
+       </dimensions>
+       <accessRoles __type="array"/>
+       <creationDateTime __type="object" __classname="DateTime">2018-06-26T12:17:10+02:00</creationDateTime>
+       <lastModificationDateTime __type="object" __classname="DateTime">2018-06-27T10:32:58+02:00</lastModificationDateTime>
+       <lastPublicationDateTime __type="object" __classname="DateTime">2018-06-27T10:32:58+02:00</lastPublicationDateTime>
+       <properties>
+        <extraClassesPre __type="array">
+         <entry0 __type="string">divider</entry0>
+        </extraClassesPre>
+       </properties>
+      </variant>
+      <node identifier="fbfeeef9-3a45-ad45-6fa5-62937a141222" nodeName="columns">
+       <variant sortingIndex="100" workspace="live" nodeType="Instanode.Headstart:GridContent.Collection" version="3" removed="" hidden="" hiddenInIndex="">
+        <dimensions>
+         <language>de</language>
+        </dimensions>
+        <accessRoles __type="array"/>
+        <creationDateTime __type="object" __classname="DateTime">2018-06-26T12:17:10+02:00</creationDateTime>
+        <lastModificationDateTime __type="object" __classname="DateTime">2018-06-27T10:32:58+02:00</lastModificationDateTime>
+        <lastPublicationDateTime __type="object" __classname="DateTime">2018-06-27T10:32:58+02:00</lastPublicationDateTime>
+        <properties/>
+       </variant>
+       <node identifier="1a7dfe7b-d288-fb00-f879-ab764b8a62ca" nodeName="column">
+        <variant sortingIndex="100" workspace="live" nodeType="Instanode.Headstart:GridContent.Column" version="4" removed="" hidden="" hiddenInIndex="">
+         <dimensions>
+          <language>de</language>
+         </dimensions>
+         <accessRoles __type="array"/>
+         <creationDateTime __type="object" __classname="DateTime">2018-06-26T12:17:10+02:00</creationDateTime>
+         <lastModificationDateTime __type="object" __classname="DateTime">2018-06-27T10:32:58+02:00</lastModificationDateTime>
+         <lastPublicationDateTime __type="object" __classname="DateTime">2018-06-27T10:32:58+02:00</lastPublicationDateTime>
+         <properties>
+          <columnWidth __type="string">col-12</columnWidth>
+         </properties>
+        </variant>
+        <node identifier="5cd55af5-8c88-e6b4-383e-35daf2b7e8c5" nodeName="content">
+         <variant sortingIndex="100" workspace="live" nodeType="Neos.Neos:ContentCollection" version="3" removed="" hidden="" hiddenInIndex="">
+          <dimensions>
+           <language>de</language>
+          </dimensions>
+          <accessRoles __type="array"/>
+          <creationDateTime __type="object" __classname="DateTime">2018-06-26T12:17:10+02:00</creationDateTime>
+          <lastModificationDateTime __type="object" __classname="DateTime">2018-06-27T10:32:58+02:00</lastModificationDateTime>
+          <lastPublicationDateTime __type="object" __classname="DateTime">2018-06-27T10:32:58+02:00</lastPublicationDateTime>
+          <properties/>
+         </variant>
+         <node identifier="b3ccdabe-66c1-4364-99a9-f40031197a9d" nodeName="node-i5icggjznq7q6">
+          <variant sortingIndex="100" workspace="live" nodeType="Neos.NodeTypes:TextWithImage" version="16" removed="" hidden="" hiddenInIndex="">
+           <dimensions>
+            <language>de</language>
+           </dimensions>
+           <accessRoles __type="array"/>
+           <creationDateTime __type="object" __classname="DateTime">2018-06-26T12:21:55+02:00</creationDateTime>
+           <lastModificationDateTime __type="object" __classname="DateTime">2018-06-26T12:32:17+02:00</lastModificationDateTime>
+           <lastPublicationDateTime __type="object" __classname="DateTime">2018-06-26T12:32:17+02:00</lastPublicationDateTime>
+           <properties>
+            <text __type="string">&lt;h2&gt;Unser Team&lt;/h2&gt;&lt;p&gt;Cadkon GmbH ist ein mittelständisches Unternehmen aus Walldorf, mitten in der Metropolregion Rhein-Neckar. Für Ihr maßgeschneidertes Maschinenbauprojekt sind wir Ihr Partner: Wir unterstützen Ihre eigenen Kapazitäten im Bereich Konstruktion, bieten Teillösungen oder übernehmen für Sie die Realisierung Ihrer kompletten Anlage – vom ersten Entwurf, über Konstruktion, Maschinenbau bis hin zur Inbetriebnahme bei Ihnen vor Ort.&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;#&quot;&gt;Zu Ihren Ansprechpartnern&lt;/a&gt;&lt;/p&gt;</text>
+            <alignment __type="string">right</alignment>
+            <image __type="object" __identifier="7869964a-f6c6-4cd4-96a4-511d5ec9e517" __classname="Neos\Media\Domain\Model\Image" __encoding="json">{&quot;__identity&quot;:&quot;7869964a-f6c6-4cd4-96a4-511d5ec9e517&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Image&quot;,&quot;title&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;DUMMY-cadkon-teaserbild-team.jpg&quot;,&quot;collectionName&quot;:&quot;persistent&quot;,&quot;relativePublicationPath&quot;:&quot;&quot;,&quot;mediaType&quot;:&quot;image\/jpeg&quot;,&quot;sha1&quot;:&quot;ee307b4e92f2607e5f36c45a25ca017bb1b7236b&quot;,&quot;hash&quot;:&quot;ee307b4e92f2607e5f36c45a25ca017bb1b7236b&quot;,&quot;__identity&quot;:&quot;4f46e45f-9f6e-41bb-b331-a1b9cb401a78&quot;}}</image>
+           </properties>
+          </variant>
+         </node>
+        </node>
+       </node>
+      </node>
+     </node>
+    </node>
+    <node identifier="21e53c90-a97e-7584-47b3-9cdbf60bad0d" nodeName="node-55f8602a20583">
+     <variant sortingIndex="329" workspace="live" nodeType="Neos.NodeTypes:Page" version="11" removed="" hidden="" hiddenInIndex="1">
+      <dimensions>
+       <language>de</language>
+      </dimensions>
+      <accessRoles __type="array"/>
+      <creationDateTime __type="object" __classname="DateTime">2015-09-15T20:15:06+02:00</creationDateTime>
+      <lastModificationDateTime __type="object" __classname="DateTime">2018-06-26T11:31:24+02:00</lastModificationDateTime>
+      <lastPublicationDateTime __type="object" __classname="DateTime">2018-06-26T11:31:24+02:00</lastPublicationDateTime>
+      <properties>
+       <uriPathSegment __type="string">kontakt</uriPathSegment>
+       <title __type="string">Kontakt</title>
+      </properties>
+     </variant>
+     <node identifier="852739fb-9b26-55cb-2f54-fc24a2e51263" nodeName="main">
+      <variant sortingIndex="100" workspace="live" nodeType="Neos.Neos:ContentCollection" version="6" removed="" hidden="" hiddenInIndex="">
+       <dimensions>
+        <language>de</language>
+       </dimensions>
+       <accessRoles __type="array"/>
+       <creationDateTime __type="object" __classname="DateTime">2015-09-15T20:15:06+02:00</creationDateTime>
+       <lastModificationDateTime __type="object" __classname="DateTime">2018-06-26T11:31:24+02:00</lastModificationDateTime>
+       <lastPublicationDateTime __type="object" __classname="DateTime">2018-06-26T11:31:24+02:00</lastPublicationDateTime>
+       <properties/>
+      </variant>
+      <node identifier="56f8beca-3f41-5a19-df33-b3154c11e569" nodeName="node-56954b5ba65e0">
+       <variant sortingIndex="100" workspace="live" nodeType="Instanode.Headstart:GridContent" version="4" removed="" hidden="" hiddenInIndex="">
+        <dimensions>
+         <language>de</language>
+        </dimensions>
+        <accessRoles __type="array"/>
+        <creationDateTime __type="object" __classname="DateTime">2016-01-12T19:52:11+01:00</creationDateTime>
+        <lastModificationDateTime __type="object" __classname="DateTime">2018-06-26T11:31:24+02:00</lastModificationDateTime>
+        <lastPublicationDateTime __type="object" __classname="DateTime">2018-06-26T11:31:24+02:00</lastPublicationDateTime>
+        <properties/>
+       </variant>
+       <node identifier="b6056b50-a1e1-fc26-7979-afaac529b93a" nodeName="columns">
+        <variant sortingIndex="100" workspace="live" nodeType="Instanode.Headstart:GridContent.Collection" version="4" removed="" hidden="" hiddenInIndex="">
+         <dimensions>
+          <language>de</language>
+         </dimensions>
+         <accessRoles __type="array"/>
+         <creationDateTime __type="object" __classname="DateTime">2016-01-12T19:52:11+01:00</creationDateTime>
+         <lastModificationDateTime __type="object" __classname="DateTime">2018-06-26T11:31:24+02:00</lastModificationDateTime>
+         <lastPublicationDateTime __type="object" __classname="DateTime">2018-06-26T11:31:24+02:00</lastPublicationDateTime>
+         <properties/>
+        </variant>
+        <node identifier="d5edb2e2-5f11-266c-29ac-172136efa4ac" nodeName="column">
+         <variant sortingIndex="100" workspace="live" nodeType="Instanode.Headstart:GridContent.Column" version="4" removed="" hidden="" hiddenInIndex="">
+          <dimensions>
+           <language>de</language>
+          </dimensions>
+          <accessRoles __type="array"/>
+          <creationDateTime __type="object" __classname="DateTime">2016-01-12T19:52:11+01:00</creationDateTime>
+          <lastModificationDateTime __type="object" __classname="DateTime">2018-06-26T11:31:24+02:00</lastModificationDateTime>
+          <lastPublicationDateTime __type="object" __classname="DateTime">2018-06-26T11:31:24+02:00</lastPublicationDateTime>
+          <properties>
+           <columnWidth __type="string">col-6</columnWidth>
+          </properties>
+         </variant>
+         <node identifier="9aa93b0d-4f3a-2e31-43d0-2359b330bcb0" nodeName="content">
+          <variant sortingIndex="100" workspace="live" nodeType="Neos.Neos:ContentCollection" version="4" removed="" hidden="" hiddenInIndex="">
+           <dimensions>
+            <language>de</language>
+           </dimensions>
+           <accessRoles __type="array"/>
+           <creationDateTime __type="object" __classname="DateTime">2016-01-12T19:52:11+01:00</creationDateTime>
+           <lastModificationDateTime __type="object" __classname="DateTime">2018-06-26T11:31:24+02:00</lastModificationDateTime>
+           <lastPublicationDateTime __type="object" __classname="DateTime">2018-06-26T11:31:24+02:00</lastPublicationDateTime>
+           <properties/>
+          </variant>
+          <node identifier="b2a21b13-c1ed-ff56-96fc-58ce1864e650" nodeName="node-56954b643d7cf">
+           <variant sortingIndex="100" workspace="live" nodeType="Neos.NodeTypes:Html" version="7" removed="" hidden="" hiddenInIndex="">
+            <dimensions>
+             <language>de</language>
+            </dimensions>
+            <accessRoles __type="array"/>
+            <creationDateTime __type="object" __classname="DateTime">2016-01-12T19:52:20+01:00</creationDateTime>
+            <lastModificationDateTime __type="object" __classname="DateTime">2018-06-26T11:31:24+02:00</lastModificationDateTime>
+            <lastPublicationDateTime __type="object" __classname="DateTime">2018-06-26T11:31:24+02:00</lastPublicationDateTime>
+            <properties>
+             <source __type="string">&lt;div class=&quot;contact&quot;&gt;
+  &lt;form id=&quot;contact-form&quot; action=&quot;/mail.php&quot; method=&quot;post&quot;&gt;
+    &lt;div class=&quot;contact-confirmation alert alert-success&quot;&gt;
+      &lt;p&gt;&lt;b&gt;Danke!&lt;/b&gt; Ihre Nachricht wurde übermittelt. &lt;span class=&quot;ticket&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;contact-error alert alert-danger&quot;&gt;
+      &lt;p class=&quot;notice&quot;&gt;&lt;b&gt;Fehler!&lt;/b&gt; Leider konnte Ihre Nachricht nicht übermittelt werden.&lt;/p&gt;
+      &lt;p class=&quot;debug&quot;&gt;&lt;b class=&quot;status&quot;&gt;&lt;/b&gt; &lt;span class=&quot;error&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;contact-content&quot;&gt;
+      &lt;div class=&quot;contact-prefix&quot;&gt;
+        &lt;p&gt;
+          Kontaktieren Sie uns:
+        &lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;form-group contact-column contact-firstname&quot;&gt;
+          &lt;input type=&quot;text&quot; required name=&quot;firstname&quot; placeholder=&quot;Vorname (*)&quot; class=&quot;form-control&quot;&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;form-group contact-column contact-lastname&quot;&gt;
+          &lt;input type=&quot;text&quot; required name=&quot;lastname&quot; placeholder=&quot;Name (*)&quot; class=&quot;form-control&quot;&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;form-group contact-column contact-mail&quot;&gt;
+          &lt;input type=&quot;email&quot; required name=&quot;email&quot; placeholder=&quot;E-Mail (*)&quot; class=&quot;form-control&quot;&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;form-group contact-column contact-company&quot;&gt;
+          &lt;input type=&quot;text&quot; name=&quot;company&quot; placeholder=&quot;Unternehmen&quot; class=&quot;form-control&quot;&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;form-group contact-column contact-telephone&quot;&gt;
+          &lt;input type=&quot;tel&quot; name=&quot;telephone&quot; placeholder=&quot;Telefon&quot; class=&quot;form-control&quot;&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;form-group contact-column contact-message&quot;&gt;
+          &lt;textarea name=&quot;message&quot; class=&quot;form-control&quot; placeholder=&quot;Ihre Nachricht&quot; rows=5&gt;&lt;/textarea&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;form-group contact-column contact-submit&quot;&gt;
+          &lt;input type=&quot;submit&quot; class=&quot;form-control btn-primary&quot; value=&quot;Absenden&quot;&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/form&gt;
+&lt;/div&gt;</source>
+            </properties>
+           </variant>
+          </node>
+         </node>
+        </node>
+       </node>
+      </node>
+     </node>
+    </node>
+    <node identifier="b92bc751-e60d-6f0f-0d23-949c1d5d32a5" nodeName="node-55f8602f493fa">
+     <variant sortingIndex="337" workspace="live" nodeType="Neos.NodeTypes:Page" version="7" removed="" hidden="" hiddenInIndex="1">
+      <dimensions>
+       <language>de</language>
+      </dimensions>
+      <accessRoles __type="array"/>
+      <creationDateTime __type="object" __classname="DateTime">2015-09-15T20:15:11+02:00</creationDateTime>
+      <lastModificationDateTime __type="object" __classname="DateTime">2018-06-26T11:31:24+02:00</lastModificationDateTime>
+      <lastPublicationDateTime __type="object" __classname="DateTime">2018-06-26T11:31:24+02:00</lastPublicationDateTime>
+      <properties>
+       <uriPathSegment __type="string">impressum</uriPathSegment>
+       <title __type="string">Impressum</title>
+      </properties>
+     </variant>
+     <node identifier="46547d79-cc3e-e09b-71b1-3b324a00861c" nodeName="main">
+      <variant sortingIndex="100" workspace="live" nodeType="Neos.Neos:ContentCollection" version="3" removed="" hidden="" hiddenInIndex="">
+       <dimensions>
+        <language>de</language>
+       </dimensions>
+       <accessRoles __type="array"/>
+       <creationDateTime __type="object" __classname="DateTime">2015-09-15T20:15:11+02:00</creationDateTime>
+       <lastModificationDateTime __type="object" __classname="DateTime">2018-06-26T11:31:24+02:00</lastModificationDateTime>
+       <lastPublicationDateTime __type="object" __classname="DateTime">2018-06-26T11:31:24+02:00</lastPublicationDateTime>
+       <properties/>
+      </variant>
+     </node>
+    </node>
+    <node identifier="ce7ae022-cee8-0b2c-19c6-959ce1e55df0" nodeName="node-56530888cb748">
+     <variant sortingIndex="225" workspace="live" nodeType="Neos.Neos:Shortcut" version="6" removed="" hidden="" hiddenInIndex="">
+      <dimensions>
+       <language>de</language>
+      </dimensions>
+      <accessRoles __type="array"/>
+      <creationDateTime __type="object" __classname="DateTime">2015-11-23T13:37:28+01:00</creationDateTime>
+      <lastModificationDateTime __type="object" __classname="DateTime">2016-02-24T15:50:14+01:00</lastModificationDateTime>
+      <lastPublicationDateTime __type="object" __classname="DateTime">2016-02-24T15:50:14+01:00</lastPublicationDateTime>
+      <properties>
+       <uriPathSegment __type="string">unternehmen</uriPathSegment>
+       <title __type="string">Unternehmen</title>
+       <targetMode __type="string">firstChildNode</targetMode>
+      </properties>
+     </variant>
+     <node identifier="54c3ca1c-1228-f04b-6414-9d4602706e89" nodeName="node-565308a41af16">
+      <variant sortingIndex="332" workspace="live" nodeType="Neos.NodeTypes:Page" version="4" removed="" hidden="" hiddenInIndex="">
+       <dimensions>
+        <language>de</language>
+       </dimensions>
+       <accessRoles __type="array"/>
+       <creationDateTime __type="object" __classname="DateTime">2015-11-23T13:38:02+01:00</creationDateTime>
+       <lastModificationDateTime __type="object" __classname="DateTime">2018-06-25T15:53:51+02:00</lastModificationDateTime>
+       <lastPublicationDateTime __type="object" __classname="DateTime">2015-11-23T13:39:17+01:00</lastPublicationDateTime>
+       <properties>
+        <uriPathSegment __type="string">uber-uns</uriPathSegment>
+        <title __type="string">Über Uns</title>
+       </properties>
+      </variant>
+      <node identifier="9dac4f1d-4c40-73bc-b73c-68e4e5edaa0c" nodeName="main">
+       <variant sortingIndex="100" workspace="live" nodeType="Neos.Neos:ContentCollection" version="2" removed="" hidden="" hiddenInIndex="">
+        <dimensions>
+         <language>de</language>
+        </dimensions>
+        <accessRoles __type="array"/>
+        <creationDateTime __type="object" __classname="DateTime">2015-11-23T13:38:02+01:00</creationDateTime>
+        <lastModificationDateTime __type="object" __classname="DateTime">2015-11-23T13:39:17+01:00</lastModificationDateTime>
+        <lastPublicationDateTime __type="object" __classname="DateTime">2015-11-23T13:39:17+01:00</lastPublicationDateTime>
+        <properties/>
+       </variant>
+       <node identifier="f18602f1-2751-fb7c-06a6-91be0d48403f" nodeName="node-56cf22a7649c8">
+        <variant sortingIndex="150" workspace="live" nodeType="Neos.NodeTypes:Headline" version="5" removed="" hidden="" hiddenInIndex="">
+         <dimensions>
+          <language>de</language>
+         </dimensions>
+         <accessRoles __type="array"/>
+         <creationDateTime __type="object" __classname="DateTime">2016-02-25T16:49:59+01:00</creationDateTime>
+         <lastModificationDateTime __type="object" __classname="DateTime">2016-02-25T16:50:45+01:00</lastModificationDateTime>
+         <lastPublicationDateTime __type="object" __classname="DateTime">2016-02-25T16:50:45+01:00</lastPublicationDateTime>
+         <properties>
+          <title __type="string">&lt;h1&gt;Über Uns&lt;/h1&gt;</title>
+         </properties>
+        </variant>
+       </node>
+       <node identifier="b5578c82-28c9-4f37-76f7-fc17ac030e28" nodeName="node-56cf246e40ac8">
+        <variant sortingIndex="200" workspace="live" nodeType="Neos.NodeTypes:Text" version="8" removed="" hidden="" hiddenInIndex="">
+         <dimensions>
+          <language>de</language>
+         </dimensions>
+         <accessRoles __type="array"/>
+         <creationDateTime __type="object" __classname="DateTime">2016-02-25T16:57:34+01:00</creationDateTime>
+         <lastModificationDateTime __type="object" __classname="DateTime">2016-10-18T10:57:00+02:00</lastModificationDateTime>
+         <lastPublicationDateTime __type="object" __classname="DateTime">2016-10-18T10:57:00+02:00</lastPublicationDateTime>
+         <properties>
+          <text __type="string">&lt;p&gt;&lt;a href=&quot;#thumb-image&quot;&gt;Lorem&lt;/a&gt; ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;</text>
+         </properties>
+        </variant>
+       </node>
+       <node identifier="b08d2f38-380c-9a05-29ae-ea15bed159a4" nodeName="node-56cf25a1cecbb">
+        <variant sortingIndex="275" workspace="live" nodeType="Neos.NodeTypes:Text" version="13" removed="" hidden="" hiddenInIndex="">
+         <dimensions>
+          <language>de</language>
+         </dimensions>
+         <accessRoles __type="array"/>
+         <creationDateTime __type="object" __classname="DateTime">2016-02-25T17:02:41+01:00</creationDateTime>
+         <lastModificationDateTime __type="object" __classname="DateTime">2016-10-18T10:38:05+02:00</lastModificationDateTime>
+         <lastPublicationDateTime __type="object" __classname="DateTime">2016-10-18T10:38:05+02:00</lastPublicationDateTime>
+         <properties>
+          <text __type="string">&lt;table&gt;&lt;caption&gt;&lt;/caption&gt;&lt;tbody&gt;&lt;tr&gt;&lt;th scope=&quot;col&quot;&gt;Lorem&lt;/th&gt;&lt;th scope=&quot;col&quot;&gt;Ipsum&lt;/th&gt;&lt;th scope=&quot;col&quot;&gt; Dolor&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Consectur adipisicing&lt;/td&gt;&lt;td&gt;Tempor incididunt&lt;/td&gt;&lt;td&gt;Magna aliqua&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;</text>
+          <extraClasses __type="string">table-responsive</extraClasses>
+         </properties>
+        </variant>
+       </node>
+      </node>
+     </node>
+     <node identifier="6633c305-1870-13c0-fbd6-e05b269c44e3" nodeName="node-565308c2c4be8">
+      <variant sortingIndex="432" workspace="live" nodeType="Neos.NodeTypes:Page" version="4" removed="" hidden="" hiddenInIndex="">
+       <dimensions>
+        <language>de</language>
+       </dimensions>
+       <accessRoles __type="array"/>
+       <creationDateTime __type="object" __classname="DateTime">2015-11-23T13:38:31+01:00</creationDateTime>
+       <lastModificationDateTime __type="object" __classname="DateTime">2018-06-25T15:53:51+02:00</lastModificationDateTime>
+       <lastPublicationDateTime __type="object" __classname="DateTime">2015-11-23T13:39:17+01:00</lastPublicationDateTime>
+       <properties>
+        <uriPathSegment __type="string">geschichte</uriPathSegment>
+        <title __type="string">Geschichte</title>
+       </properties>
+      </variant>
+      <node identifier="55d497ce-730e-36d5-0382-d6067ef7b3e2" nodeName="main">
+       <variant sortingIndex="100" workspace="live" nodeType="Neos.Neos:ContentCollection" version="2" removed="" hidden="" hiddenInIndex="">
+        <dimensions>
+         <language>de</language>
+        </dimensions>
+        <accessRoles __type="array"/>
+        <creationDateTime __type="object" __classname="DateTime">2015-11-23T13:38:31+01:00</creationDateTime>
+        <lastModificationDateTime __type="object" __classname="DateTime">2015-11-23T13:39:17+01:00</lastModificationDateTime>
+        <lastPublicationDateTime __type="object" __classname="DateTime">2015-11-23T13:39:17+01:00</lastPublicationDateTime>
+        <properties/>
+       </variant>
+      </node>
+     </node>
+    </node>
+    <node identifier="5b1cfcab-3b53-494f-8111-a9c35f89b49d" nodeName="node-i1mv3ddfi5ote">
+     <variant sortingIndex="232" workspace="live" nodeType="Instanode.Headstart:Callout.Page" version="5" removed="" hidden="" hiddenInIndex="">
+      <dimensions>
+       <language>de</language>
+      </dimensions>
+      <accessRoles __type="array"/>
+      <creationDateTime __type="object" __classname="DateTime">2018-06-19T13:24:50+02:00</creationDateTime>
+      <lastModificationDateTime __type="object" __classname="DateTime">2018-06-25T15:53:51+02:00</lastModificationDateTime>
+      <lastPublicationDateTime __type="object" __classname="DateTime">2018-06-19T13:25:58+02:00</lastPublicationDateTime>
+      <properties>
+       <uriPathSegment __type="string">maschinenbau</uriPathSegment>
+       <title __type="string">Maschinenbau</title>
+      </properties>
+     </variant>
+     <node identifier="5750125a-943e-1998-3368-fade3b143e47" nodeName="carousel">
+      <variant sortingIndex="200" workspace="live" nodeType="Neos.Neos:ContentCollection" version="2" removed="" hidden="" hiddenInIndex="">
+       <dimensions>
+        <language>de</language>
+       </dimensions>
+       <accessRoles __type="array"/>
+       <creationDateTime __type="object" __classname="DateTime">2018-06-19T13:24:50+02:00</creationDateTime>
+       <lastModificationDateTime __type="object" __classname="DateTime">2018-06-19T13:25:59+02:00</lastModificationDateTime>
+       <lastPublicationDateTime __type="object" __classname="DateTime">2018-06-19T13:25:58+02:00</lastPublicationDateTime>
+       <properties/>
+      </variant>
+     </node>
+     <node identifier="496b0be0-697a-84b5-3f23-6d8ec2ba99b4" nodeName="main">
+      <variant sortingIndex="100" workspace="live" nodeType="Neos.Neos:ContentCollection" version="2" removed="" hidden="" hiddenInIndex="">
+       <dimensions>
+        <language>de</language>
+       </dimensions>
+       <accessRoles __type="array"/>
+       <creationDateTime __type="object" __classname="DateTime">2018-06-19T13:24:50+02:00</creationDateTime>
+       <lastModificationDateTime __type="object" __classname="DateTime">2018-06-19T13:25:59+02:00</lastModificationDateTime>
+       <lastPublicationDateTime __type="object" __classname="DateTime">2018-06-19T13:25:58+02:00</lastPublicationDateTime>
+       <properties/>
+      </variant>
+     </node>
+    </node>
+    <node identifier="cdefca44-6835-4847-8165-3c2ad6752fdf" nodeName="node-jkmhrwmf9eomr">
+     <variant sortingIndex="313" workspace="live" nodeType="Instanode.Headstart:Callout.Page" version="4" removed="" hidden="" hiddenInIndex="">
+      <dimensions>
+       <language>de</language>
+      </dimensions>
+      <accessRoles __type="array"/>
+      <creationDateTime __type="object" __classname="DateTime">2018-06-19T13:25:47+02:00</creationDateTime>
+      <lastModificationDateTime __type="object" __classname="DateTime">2018-06-25T15:53:51+02:00</lastModificationDateTime>
+      <lastPublicationDateTime __type="object" __classname="DateTime">2018-06-19T13:25:50+02:00</lastPublicationDateTime>
+      <properties>
+       <uriPathSegment __type="string">aktuelles</uriPathSegment>
+       <title __type="string">Aktuelles</title>
+      </properties>
+     </variant>
+     <node identifier="e1b8504e-308a-67d0-9397-e8ec8acc2d82" nodeName="carousel">
+      <variant sortingIndex="200" workspace="live" nodeType="Neos.Neos:ContentCollection" version="2" removed="" hidden="" hiddenInIndex="">
+       <dimensions>
+        <language>de</language>
+       </dimensions>
+       <accessRoles __type="array"/>
+       <creationDateTime __type="object" __classname="DateTime">2018-06-19T13:25:47+02:00</creationDateTime>
+       <lastModificationDateTime __type="object" __classname="DateTime">2018-06-19T13:25:50+02:00</lastModificationDateTime>
+       <lastPublicationDateTime __type="object" __classname="DateTime">2018-06-19T13:25:50+02:00</lastPublicationDateTime>
+       <properties/>
+      </variant>
+     </node>
+     <node identifier="b24f1687-011c-b093-4446-89375d7d942d" nodeName="main">
+      <variant sortingIndex="100" workspace="live" nodeType="Neos.Neos:ContentCollection" version="2" removed="" hidden="" hiddenInIndex="">
+       <dimensions>
+        <language>de</language>
+       </dimensions>
+       <accessRoles __type="array"/>
+       <creationDateTime __type="object" __classname="DateTime">2018-06-19T13:25:47+02:00</creationDateTime>
+       <lastModificationDateTime __type="object" __classname="DateTime">2018-06-19T13:25:50+02:00</lastModificationDateTime>
+       <lastPublicationDateTime __type="object" __classname="DateTime">2018-06-19T13:25:50+02:00</lastPublicationDateTime>
+       <properties/>
+      </variant>
+     </node>
+    </node>
+    <node identifier="cfddfa95-e23e-480e-b847-df21949f4c8c" nodeName="node-m9vlpc1nr0g47">
+     <variant sortingIndex="235" workspace="live" nodeType="Instanode.Headstart:Callout.Page" version="5" removed="" hidden="" hiddenInIndex="">
+      <dimensions>
+       <language>de</language>
+      </dimensions>
+      <accessRoles __type="array"/>
+      <creationDateTime __type="object" __classname="DateTime">2018-06-19T13:25:11+02:00</creationDateTime>
+      <lastModificationDateTime __type="object" __classname="DateTime">2018-06-25T15:53:51+02:00</lastModificationDateTime>
+      <lastPublicationDateTime __type="object" __classname="DateTime">2018-06-19T13:25:58+02:00</lastPublicationDateTime>
+      <properties>
+       <uriPathSegment __type="string">konstruktion</uriPathSegment>
+       <title __type="string">Konstruktion</title>
+      </properties>
+     </variant>
+     <node identifier="a2aed326-6cab-862a-f708-d9414dc3948f" nodeName="carousel">
+      <variant sortingIndex="200" workspace="live" nodeType="Neos.Neos:ContentCollection" version="2" removed="" hidden="" hiddenInIndex="">
+       <dimensions>
+        <language>de</language>
+       </dimensions>
+       <accessRoles __type="array"/>
+       <creationDateTime __type="object" __classname="DateTime">2018-06-19T13:25:11+02:00</creationDateTime>
+       <lastModificationDateTime __type="object" __classname="DateTime">2018-06-19T13:25:59+02:00</lastModificationDateTime>
+       <lastPublicationDateTime __type="object" __classname="DateTime">2018-06-19T13:25:58+02:00</lastPublicationDateTime>
+       <properties/>
+      </variant>
+     </node>
+     <node identifier="02344180-7705-c5dd-5b01-1511377b7589" nodeName="main">
+      <variant sortingIndex="100" workspace="live" nodeType="Neos.Neos:ContentCollection" version="2" removed="" hidden="" hiddenInIndex="">
+       <dimensions>
+        <language>de</language>
+       </dimensions>
+       <accessRoles __type="array"/>
+       <creationDateTime __type="object" __classname="DateTime">2018-06-19T13:25:11+02:00</creationDateTime>
+       <lastModificationDateTime __type="object" __classname="DateTime">2018-06-19T13:25:59+02:00</lastModificationDateTime>
+       <lastPublicationDateTime __type="object" __classname="DateTime">2018-06-19T13:25:58+02:00</lastPublicationDateTime>
+       <properties/>
+      </variant>
+     </node>
+    </node>
+    <node identifier="4960cb5a-95ef-4c80-83bf-5cc08453a679" nodeName="node-mn1u6oawbvple">
+     <variant sortingIndex="288" workspace="live" nodeType="Instanode.Headstart:Callout.Page" version="5" removed="" hidden="" hiddenInIndex="">
+      <dimensions>
+       <language>de</language>
+      </dimensions>
+      <accessRoles __type="array"/>
+      <creationDateTime __type="object" __classname="DateTime">2018-06-19T13:25:41+02:00</creationDateTime>
+      <lastModificationDateTime __type="object" __classname="DateTime">2018-06-25T15:53:51+02:00</lastModificationDateTime>
+      <lastPublicationDateTime __type="object" __classname="DateTime">2018-06-19T13:25:58+02:00</lastPublicationDateTime>
+      <properties>
+       <uriPathSegment __type="string">steuerung</uriPathSegment>
+       <title __type="string">Steuerung</title>
+      </properties>
+     </variant>
+     <node identifier="652f263c-a3cb-87a8-004b-849ac3d7a7bc" nodeName="carousel">
+      <variant sortingIndex="200" workspace="live" nodeType="Neos.Neos:ContentCollection" version="2" removed="" hidden="" hiddenInIndex="">
+       <dimensions>
+        <language>de</language>
+       </dimensions>
+       <accessRoles __type="array"/>
+       <creationDateTime __type="object" __classname="DateTime">2018-06-19T13:25:41+02:00</creationDateTime>
+       <lastModificationDateTime __type="object" __classname="DateTime">2018-06-19T13:25:59+02:00</lastModificationDateTime>
+       <lastPublicationDateTime __type="object" __classname="DateTime">2018-06-19T13:25:58+02:00</lastPublicationDateTime>
+       <properties/>
+      </variant>
+     </node>
+     <node identifier="fb6a6f1c-2694-5ae2-bd1d-272563768980" nodeName="main">
+      <variant sortingIndex="100" workspace="live" nodeType="Neos.Neos:ContentCollection" version="2" removed="" hidden="" hiddenInIndex="">
+       <dimensions>
+        <language>de</language>
+       </dimensions>
+       <accessRoles __type="array"/>
+       <creationDateTime __type="object" __classname="DateTime">2018-06-19T13:25:41+02:00</creationDateTime>
+       <lastModificationDateTime __type="object" __classname="DateTime">2018-06-19T13:25:59+02:00</lastModificationDateTime>
+       <lastPublicationDateTime __type="object" __classname="DateTime">2018-06-19T13:25:58+02:00</lastPublicationDateTime>
+       <properties/>
+      </variant>
+     </node>
+    </node>
+    <node identifier="d8317036-395e-4d77-94bd-447332e37f97" nodeName="node-n28uun7jmohap">
+     <variant sortingIndex="394" workspace="live" nodeType="Instanode.Headstart:Callout.Page" version="5" removed="" hidden="" hiddenInIndex="1">
+      <dimensions>
+       <language>de</language>
+      </dimensions>
+      <accessRoles __type="array"/>
+      <creationDateTime __type="object" __classname="DateTime">2018-06-26T11:35:33+02:00</creationDateTime>
+      <lastModificationDateTime __type="object" __classname="DateTime">2018-06-26T11:35:52+02:00</lastModificationDateTime>
+      <lastPublicationDateTime __type="object" __classname="DateTime">2018-06-26T11:35:52+02:00</lastPublicationDateTime>
+      <properties>
+       <uriPathSegment __type="string">downloads</uriPathSegment>
+       <title __type="string">Downloads</title>
+      </properties>
+     </variant>
+     <node identifier="f9ebee0d-99bf-41d9-7e2b-018fa073273b" nodeName="carousel">
+      <variant sortingIndex="200" workspace="live" nodeType="Neos.Neos:ContentCollection" version="2" removed="" hidden="" hiddenInIndex="">
+       <dimensions>
+        <language>de</language>
+       </dimensions>
+       <accessRoles __type="array"/>
+       <creationDateTime __type="object" __classname="DateTime">2018-06-26T11:35:33+02:00</creationDateTime>
+       <lastModificationDateTime __type="object" __classname="DateTime">2018-06-26T11:35:52+02:00</lastModificationDateTime>
+       <lastPublicationDateTime __type="object" __classname="DateTime">2018-06-26T11:35:52+02:00</lastPublicationDateTime>
+       <properties/>
+      </variant>
+     </node>
+     <node identifier="f9e2f7ff-a9ae-c655-50bb-d21c55df0611" nodeName="main">
+      <variant sortingIndex="100" workspace="live" nodeType="Neos.Neos:ContentCollection" version="2" removed="" hidden="" hiddenInIndex="">
+       <dimensions>
+        <language>de</language>
+       </dimensions>
+       <accessRoles __type="array"/>
+       <creationDateTime __type="object" __classname="DateTime">2018-06-26T11:35:33+02:00</creationDateTime>
+       <lastModificationDateTime __type="object" __classname="DateTime">2018-06-26T11:35:52+02:00</lastModificationDateTime>
+       <lastPublicationDateTime __type="object" __classname="DateTime">2018-06-26T11:35:52+02:00</lastPublicationDateTime>
+       <properties/>
+      </variant>
+     </node>
+    </node>
+    <node identifier="c02de47c-3013-4348-8f31-d165830f24df" nodeName="node-s1skfgkxl0qis">
+     <variant sortingIndex="237" workspace="live" nodeType="Instanode.Headstart:Callout.Page" version="4" removed="" hidden="" hiddenInIndex="">
+      <dimensions>
+       <language>de</language>
+      </dimensions>
+      <accessRoles __type="array"/>
+      <creationDateTime __type="object" __classname="DateTime">2018-06-19T13:25:31+02:00</creationDateTime>
+      <lastModificationDateTime __type="object" __classname="DateTime">2018-06-25T15:53:51+02:00</lastModificationDateTime>
+      <lastPublicationDateTime __type="object" __classname="DateTime">2018-06-19T13:25:58+02:00</lastPublicationDateTime>
+      <properties>
+       <uriPathSegment __type="string">fertigung</uriPathSegment>
+       <title __type="string">Fertigung</title>
+      </properties>
+     </variant>
+     <node identifier="8fcd89b0-3fa5-3688-4dbf-200c6a5a68a0" nodeName="carousel">
+      <variant sortingIndex="200" workspace="live" nodeType="Neos.Neos:ContentCollection" version="2" removed="" hidden="" hiddenInIndex="">
+       <dimensions>
+        <language>de</language>
+       </dimensions>
+       <accessRoles __type="array"/>
+       <creationDateTime __type="object" __classname="DateTime">2018-06-19T13:25:31+02:00</creationDateTime>
+       <lastModificationDateTime __type="object" __classname="DateTime">2018-06-19T13:25:59+02:00</lastModificationDateTime>
+       <lastPublicationDateTime __type="object" __classname="DateTime">2018-06-19T13:25:58+02:00</lastPublicationDateTime>
+       <properties/>
+      </variant>
+     </node>
+     <node identifier="baddc7ad-8a29-607b-b5e6-2063f65a6492" nodeName="main">
+      <variant sortingIndex="100" workspace="live" nodeType="Neos.Neos:ContentCollection" version="2" removed="" hidden="" hiddenInIndex="">
+       <dimensions>
+        <language>de</language>
+       </dimensions>
+       <accessRoles __type="array"/>
+       <creationDateTime __type="object" __classname="DateTime">2018-06-19T13:25:31+02:00</creationDateTime>
+       <lastModificationDateTime __type="object" __classname="DateTime">2018-06-19T13:25:59+02:00</lastModificationDateTime>
+       <lastPublicationDateTime __type="object" __classname="DateTime">2018-06-19T13:25:58+02:00</lastPublicationDateTime>
+       <properties/>
+      </variant>
+     </node>
+    </node>
+    <node identifier="976833b7-7724-4644-abfb-77781d491a00" nodeName="node-smzfvc4vz4iyx">
+     <variant sortingIndex="341" workspace="live" nodeType="Instanode.Headstart:Callout.Page" version="5" removed="" hidden="" hiddenInIndex="1">
+      <dimensions>
+       <language>de</language>
+      </dimensions>
+      <accessRoles __type="array"/>
+      <creationDateTime __type="object" __classname="DateTime">2018-06-26T11:35:13+02:00</creationDateTime>
+      <lastModificationDateTime __type="object" __classname="DateTime">2018-06-26T11:35:49+02:00</lastModificationDateTime>
+      <lastPublicationDateTime __type="object" __classname="DateTime">2018-06-26T11:35:49+02:00</lastPublicationDateTime>
+      <properties>
+       <uriPathSegment __type="string">agbs</uriPathSegment>
+       <title __type="string">AGBs</title>
+      </properties>
+     </variant>
+     <node identifier="51fe78af-564c-fc10-f197-983c0dc04792" nodeName="carousel">
+      <variant sortingIndex="200" workspace="live" nodeType="Neos.Neos:ContentCollection" version="2" removed="" hidden="" hiddenInIndex="">
+       <dimensions>
+        <language>de</language>
+       </dimensions>
+       <accessRoles __type="array"/>
+       <creationDateTime __type="object" __classname="DateTime">2018-06-26T11:35:13+02:00</creationDateTime>
+       <lastModificationDateTime __type="object" __classname="DateTime">2018-06-26T11:35:49+02:00</lastModificationDateTime>
+       <lastPublicationDateTime __type="object" __classname="DateTime">2018-06-26T11:35:49+02:00</lastPublicationDateTime>
+       <properties/>
+      </variant>
+     </node>
+     <node identifier="16843e57-c359-4b50-2617-8cf0a0e2f0cd" nodeName="main">
+      <variant sortingIndex="100" workspace="live" nodeType="Neos.Neos:ContentCollection" version="2" removed="" hidden="" hiddenInIndex="">
+       <dimensions>
+        <language>de</language>
+       </dimensions>
+       <accessRoles __type="array"/>
+       <creationDateTime __type="object" __classname="DateTime">2018-06-26T11:35:13+02:00</creationDateTime>
+       <lastModificationDateTime __type="object" __classname="DateTime">2018-06-26T11:35:49+02:00</lastModificationDateTime>
+       <lastPublicationDateTime __type="object" __classname="DateTime">2018-06-26T11:35:49+02:00</lastPublicationDateTime>
+       <properties/>
+      </variant>
+     </node>
+    </node>
+    <node identifier="52731d8e-4dcb-4099-8d3e-f45b5f60a499" nodeName="node-v1ssd9y15f40l">
+     <variant sortingIndex="444" workspace="live" nodeType="Neos.Neos:Shortcut" version="6" removed="" hidden="" hiddenInIndex="1">
+      <dimensions>
+       <language>de</language>
+      </dimensions>
+      <accessRoles __type="array"/>
+      <creationDateTime __type="object" __classname="DateTime">2018-06-25T07:57:43+02:00</creationDateTime>
+      <lastModificationDateTime __type="object" __classname="DateTime">2018-06-26T11:35:33+02:00</lastModificationDateTime>
+      <lastPublicationDateTime __type="object" __classname="DateTime">2018-06-25T08:03:01+02:00</lastPublicationDateTime>
+      <properties>
+       <uriPathSegment __type="string">meta</uriPathSegment>
+       <targetMode __type="string">firstChildNode</targetMode>
+       <title __type="string">Meta-Nav</title>
+      </properties>
+     </variant>
+     <node identifier="1c3a1102-b8cf-4ec8-9ef5-2ec74e3cbcc8" nodeName="node-dp6dieb511fo3">
+      <variant sortingIndex="538" workspace="live" nodeType="Neos.Neos:Shortcut" version="5" removed="" hidden="" hiddenInIndex="">
+       <dimensions>
+        <language>de</language>
+       </dimensions>
+       <accessRoles __type="array"/>
+       <creationDateTime __type="object" __classname="DateTime">2018-06-26T11:30:48+02:00</creationDateTime>
+       <lastModificationDateTime __type="object" __classname="DateTime">2018-06-26T11:31:46+02:00</lastModificationDateTime>
+       <lastPublicationDateTime __type="object" __classname="DateTime">2018-06-26T11:31:45+02:00</lastPublicationDateTime>
+       <properties>
+        <uriPathSegment __type="string">kontakt-1</uriPathSegment>
+        <targetMode __type="string">selectedTarget</targetMode>
+        <title __type="string">Kontakt</title>
+        <target __type="string">node://21e53c90-a97e-7584-47b3-9cdbf60bad0d</target>
+       </properties>
+      </variant>
+     </node>
+    </node>
+    <node identifier="b650ff9d-e3e2-4030-8f01-382d8c934de2" nodeName="node-vj85e78o1ojpb">
+     <variant sortingIndex="497" workspace="live" nodeType="Neos.Neos:Shortcut" version="6" removed="" hidden="" hiddenInIndex="1">
+      <dimensions>
+       <language>de</language>
+      </dimensions>
+      <accessRoles __type="array"/>
+      <creationDateTime __type="object" __classname="DateTime">2018-06-26T11:32:26+02:00</creationDateTime>
+      <lastModificationDateTime __type="object" __classname="DateTime">2018-06-26T11:38:01+02:00</lastModificationDateTime>
+      <lastPublicationDateTime __type="object" __classname="DateTime">2018-06-26T11:38:01+02:00</lastPublicationDateTime>
+      <properties>
+       <uriPathSegment __type="string">footer-meta</uriPathSegment>
+       <targetMode __type="string">firstChildNode</targetMode>
+       <title __type="string">Footer-Meta-Nav</title>
+      </properties>
+     </variant>
+     <node identifier="0ce85086-cd13-4bc2-b41d-83bbe1b574ac" nodeName="node-0080hh36ajipr">
+      <variant sortingIndex="674" workspace="live" nodeType="Neos.Neos:Shortcut" version="4" removed="" hidden="" hiddenInIndex="">
+       <dimensions>
+        <language>de</language>
+       </dimensions>
+       <accessRoles __type="array"/>
+       <creationDateTime __type="object" __classname="DateTime">2018-06-26T11:36:36+02:00</creationDateTime>
+       <lastModificationDateTime __type="object" __classname="DateTime">2018-06-26T11:37:33+02:00</lastModificationDateTime>
+       <lastPublicationDateTime __type="object" __classname="DateTime">2018-06-26T11:37:33+02:00</lastPublicationDateTime>
+       <properties>
+        <uriPathSegment __type="string">datenschutz</uriPathSegment>
+        <targetMode __type="string">selectedTarget</targetMode>
+        <title __type="string">Datenschutz</title>
+        <target __type="string">node://28fdbe4c-f697-4b15-9ffe-f0ef4edb760e</target>
+       </properties>
+      </variant>
+     </node>
+     <node identifier="51bdb4ae-923a-43bf-b0a9-ac2932e6c246" nodeName="node-4alf64at3zbgt">
+      <variant sortingIndex="624" workspace="live" nodeType="Neos.Neos:Shortcut" version="4" removed="" hidden="" hiddenInIndex="">
+       <dimensions>
+        <language>de</language>
+       </dimensions>
+       <accessRoles __type="array"/>
+       <creationDateTime __type="object" __classname="DateTime">2018-06-26T11:36:12+02:00</creationDateTime>
+       <lastModificationDateTime __type="object" __classname="DateTime">2018-06-26T11:37:33+02:00</lastModificationDateTime>
+       <lastPublicationDateTime __type="object" __classname="DateTime">2018-06-26T11:37:33+02:00</lastPublicationDateTime>
+       <properties>
+        <uriPathSegment __type="string">impressum-1</uriPathSegment>
+        <targetMode __type="string">selectedTarget</targetMode>
+        <title __type="string">Impressum</title>
+        <target __type="string">node://b92bc751-e60d-6f0f-0d23-949c1d5d32a5</target>
+       </properties>
+      </variant>
+     </node>
+     <node identifier="771c441e-4983-476f-97ef-727eadfe3aae" nodeName="node-5x9g7axefhvzb">
+      <variant sortingIndex="724" workspace="live" nodeType="Neos.Neos:Shortcut" version="4" removed="" hidden="" hiddenInIndex="">
+       <dimensions>
+        <language>de</language>
+       </dimensions>
+       <accessRoles __type="array"/>
+       <creationDateTime __type="object" __classname="DateTime">2018-06-26T11:36:58+02:00</creationDateTime>
+       <lastModificationDateTime __type="object" __classname="DateTime">2018-06-26T11:37:33+02:00</lastModificationDateTime>
+       <lastPublicationDateTime __type="object" __classname="DateTime">2018-06-26T11:37:33+02:00</lastPublicationDateTime>
+       <properties>
+        <uriPathSegment __type="string">agbs</uriPathSegment>
+        <targetMode __type="string">selectedTarget</targetMode>
+        <title __type="string">AGBs</title>
+        <target __type="string">node://976833b7-7724-4644-abfb-77781d491a00</target>
+       </properties>
+      </variant>
+     </node>
+     <node identifier="6d1ad66c-9cce-407c-a6fe-b13d3def6144" nodeName="node-e9cati3jloyq4">
+      <variant sortingIndex="774" workspace="live" nodeType="Neos.Neos:Shortcut" version="4" removed="" hidden="" hiddenInIndex="">
+       <dimensions>
+        <language>de</language>
+       </dimensions>
+       <accessRoles __type="array"/>
+       <creationDateTime __type="object" __classname="DateTime">2018-06-26T11:37:21+02:00</creationDateTime>
+       <lastModificationDateTime __type="object" __classname="DateTime">2018-06-26T11:37:30+02:00</lastModificationDateTime>
+       <lastPublicationDateTime __type="object" __classname="DateTime">2018-06-26T11:37:30+02:00</lastPublicationDateTime>
+       <properties>
+        <uriPathSegment __type="string">downloads</uriPathSegment>
+        <targetMode __type="string">selectedTarget</targetMode>
+        <title __type="string">Downloads</title>
+        <target __type="string">node://d8317036-395e-4d77-94bd-447332e37f97</target>
+       </properties>
+      </variant>
+     </node>
+    </node>
+    <node identifier="28fdbe4c-f697-4b15-9ffe-f0ef4edb760e" nodeName="node-xc2lg07k4lsdj">
+     <variant sortingIndex="343" workspace="live" nodeType="Instanode.Headstart:Callout.Page" version="4" removed="" hidden="" hiddenInIndex="1">
+      <dimensions>
+       <language>de</language>
+      </dimensions>
+      <accessRoles __type="array"/>
+      <creationDateTime __type="object" __classname="DateTime">2018-06-26T11:35:25+02:00</creationDateTime>
+      <lastModificationDateTime __type="object" __classname="DateTime">2018-06-26T11:35:52+02:00</lastModificationDateTime>
+      <lastPublicationDateTime __type="object" __classname="DateTime">2018-06-26T11:35:52+02:00</lastPublicationDateTime>
+      <properties>
+       <uriPathSegment __type="string">datenschutz</uriPathSegment>
+       <title __type="string">Datenschutz</title>
+      </properties>
+     </variant>
+     <node identifier="9743dcfb-cec2-6d62-a6f5-e016a63c5ffe" nodeName="carousel">
+      <variant sortingIndex="200" workspace="live" nodeType="Neos.Neos:ContentCollection" version="2" removed="" hidden="" hiddenInIndex="">
+       <dimensions>
+        <language>de</language>
+       </dimensions>
+       <accessRoles __type="array"/>
+       <creationDateTime __type="object" __classname="DateTime">2018-06-26T11:35:25+02:00</creationDateTime>
+       <lastModificationDateTime __type="object" __classname="DateTime">2018-06-26T11:35:52+02:00</lastModificationDateTime>
+       <lastPublicationDateTime __type="object" __classname="DateTime">2018-06-26T11:35:52+02:00</lastPublicationDateTime>
+       <properties/>
+      </variant>
+     </node>
+     <node identifier="b3cefe1f-79c9-c501-aeee-b4c99f80bcc4" nodeName="main">
+      <variant sortingIndex="100" workspace="live" nodeType="Neos.Neos:ContentCollection" version="2" removed="" hidden="" hiddenInIndex="">
+       <dimensions>
+        <language>de</language>
+       </dimensions>
+       <accessRoles __type="array"/>
+       <creationDateTime __type="object" __classname="DateTime">2018-06-26T11:35:25+02:00</creationDateTime>
+       <lastModificationDateTime __type="object" __classname="DateTime">2018-06-26T11:35:52+02:00</lastModificationDateTime>
+       <lastPublicationDateTime __type="object" __classname="DateTime">2018-06-26T11:35:52+02:00</lastPublicationDateTime>
+       <properties/>
+      </variant>
+     </node>
+    </node>
+   </node>
+  </nodes>
+ </site>
+</root>
